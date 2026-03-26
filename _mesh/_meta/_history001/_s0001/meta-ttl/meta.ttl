@@ -8,4 +8,5 @@
 
 <_mesh/_meta> a sflo:MeshMetadata, sflo:DigitalArtifact, sflo:RdfDocument .
 
-<_mesh/_inventory> a sflo:MeshInventory, sflo:DigitalArtifact, sflo:RdfDocument .
+<_mesh/_inventory>
+  sflo:hasWorkingLocatedFile <_mesh/_inventory/inventory.ttl> .
