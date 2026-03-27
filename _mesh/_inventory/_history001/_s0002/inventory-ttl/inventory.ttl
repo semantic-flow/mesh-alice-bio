@@ -9,6 +9,9 @@
   sflo:hasKnop <alice/_knop> ;
   sflo:hasResourcePage <_mesh/index.html> .
 
+<alice>
+  sflo:hasResourcePage <alice/index.html> .
+
 <alice/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <alice/_knop/_inventory/inventory.ttl> ;
   sflo:hasResourcePage <alice/_knop/index.html> .
@@ -83,6 +86,8 @@
 <alice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <_mesh/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<alice/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <alice/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
