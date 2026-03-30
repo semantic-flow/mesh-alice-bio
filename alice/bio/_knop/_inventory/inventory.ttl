@@ -1,0 +1,23 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/semantic-flow-ontology/> .
+
+<alice/bio/_knop> a sflo:Knop ;
+  sflo:hasKnopMetadata <alice/bio/_knop/_meta> ;
+  sflo:hasKnopInventory <alice/bio/_knop/_inventory> ;
+  sflo:hasWorkingKnopInventoryFile <alice/bio/_knop/_inventory/inventory.ttl> ;
+  sflo:hasPayloadArtifact <alice/bio> .
+
+<alice/bio> a sflo:PayloadArtifact, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <alice-bio.ttl> .
+
+<alice/bio/_knop/_meta> a sflo:KnopMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <alice/bio/_knop/_meta/meta.ttl> .
+
+<alice/bio/_knop/_inventory> a sflo:KnopInventory, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <alice/bio/_knop/_inventory/inventory.ttl> .
+
+<alice/bio/_knop/_meta/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<alice/bio/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<alice-bio.ttl> a sflo:LocatedFile, sflo:RdfDocument .
