@@ -24,6 +24,7 @@
   sflo:hasResourcePage <alice/bio/_history001/index.html> .
 
 <alice/bio/_history001/_s0001> a sflo:HistoricalState ;
+  sflo:stateOrdinal "1"^^xsd:nonNegativeInteger ;
   sflo:hasManifestation <alice/bio/_history001/_s0001/alice-bio-ttl> ;
   sflo:locatedFileForState <alice/bio/_history001/_s0001/alice-bio-ttl/alice-bio.ttl> ;
   sflo:hasResourcePage <alice/bio/_history001/_s0001/index.html> .
@@ -47,6 +48,7 @@
   sflo:hasResourcePage <alice/bio/_knop/_meta/_history001/index.html> .
 
 <alice/bio/_knop/_meta/_history001/_s0001> a sflo:HistoricalState ;
+  sflo:stateOrdinal "1"^^xsd:nonNegativeInteger ;
   sflo:hasManifestation <alice/bio/_knop/_meta/_history001/_s0001/meta-ttl> ;
   sflo:locatedFileForState <alice/bio/_knop/_meta/_history001/_s0001/meta-ttl/meta.ttl> ;
   sflo:hasResourcePage <alice/bio/_knop/_meta/_history001/_s0001/index.html> .
@@ -70,6 +72,7 @@
   sflo:hasResourcePage <alice/bio/_knop/_inventory/_history001/index.html> .
 
 <alice/bio/_knop/_inventory/_history001/_s0001> a sflo:HistoricalState ;
+  sflo:stateOrdinal "1"^^xsd:nonNegativeInteger ;
   sflo:hasManifestation <alice/bio/_knop/_inventory/_history001/_s0001/inventory-ttl> ;
   sflo:locatedFileForState <alice/bio/_knop/_inventory/_history001/_s0001/inventory-ttl/inventory.ttl> ;
   sflo:hasResourcePage <alice/bio/_knop/_inventory/_history001/_s0001/index.html> .
