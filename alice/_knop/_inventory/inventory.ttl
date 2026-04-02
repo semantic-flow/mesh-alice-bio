@@ -6,6 +6,7 @@
   sflo:hasKnopMetadata <alice/_knop/_meta> ;
   sflo:hasKnopInventory <alice/_knop/_inventory> ;
   sflo:hasWorkingKnopInventoryFile <alice/_knop/_inventory/inventory.ttl> ;
+  sflo:hasReferenceCatalog <alice/_references> ;
   sflo:hasResourcePage <alice/_knop/index.html> .
 
 <alice/_knop/_meta> a sflo:KnopMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
@@ -38,6 +39,9 @@
   sflo:hasWorkingLocatedFile <alice/_knop/_inventory/inventory.ttl> ;
   sflo:hasResourcePage <alice/_knop/_inventory/index.html> .
 
+<alice/_references> a sflo:ReferenceCatalog, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <alice/_references/references.ttl> .
+
 <alice/_knop/_inventory/_history001> a sflo:ArtifactHistory ;
   sflo:historyOrdinal "1"^^xsd:nonNegativeInteger ;
   sflo:hasHistoricalState <alice/_knop/_inventory/_history001/_s0001> ;
@@ -57,6 +61,8 @@
 <alice/_knop/_meta/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <alice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<alice/_references/references.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <alice/_knop/_meta/_history001/_s0001/meta-ttl/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 

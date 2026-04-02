@@ -1,0 +1,9 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/semantic-flow-ontology/> .
+
+<alice> sflo:hasReferenceLink <alice/_references/_reference001> .
+
+<alice/_references/_reference001> a sflo:ReferenceLink ;
+  sflo:referenceLinkFor <alice> ;
+  sflo:hasReferenceRole <sflo:ReferenceRole/Canonical> ;
+  sflo:referenceTarget <alice/bio> .
