@@ -18,7 +18,7 @@ The current scenario ladder is:
 - `09-alice-bio-referenced-woven`: weave `08-alice-bio-referenced`
 - `10-alice-bio-updated`: update the integrated payload before the next weave
 - `11-alice-bio-v2-woven`: weave `10-alice-bio-updated`
-- `12-bob-extracted`: extract the referenced Bob IRI into Knop-managed resources
+- `12-bob-extracted`: create Bob's Knop-managed resources and a Supplemental reference back to `alice/bio`
 - `13-bob-extracted-woven`: weave `12-bob-extracted`
 
 Branches named `*-woven` represent the result of running `weave` over the immediately preceding branch state. In this fixture, `weave` means `version`, `validate`, and `generate`; it does not perform `integrate`.
