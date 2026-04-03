@@ -5,5 +5,5 @@
 
 <alice/_knop/_references#reference001> a sflo:ReferenceLink ;
   sflo:referenceLinkFor <alice> ;
-  sflo:hasReferenceRole <sflo:ReferenceRole/Canonical> ;
+  sflo:hasReferenceRole <https://semantic-flow.github.io/semantic-flow-ontology/ReferenceRole/Canonical> ;
   sflo:referenceTarget <alice/bio> .
