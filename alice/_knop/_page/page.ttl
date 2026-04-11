@@ -10,17 +10,11 @@
   sfc:hasResourcePageSource <#main-source> .
 
 <#main-source> a sfc:ResourcePageSource ;
-  sfc:hasTargetLocatedFile <#main-file> .
-
-<#main-file> a sfc:WorkspaceRelativeFile, sflo:LocatedFile ;
-  sfc:workspaceRelativePath "alice/alice.md" .
+  sfc:targetMeshPath "alice/alice.md" .
 
 <#sidebar-region> a sfc:ResourcePageRegion ;
   sfc:regionKey "sidebar" ;
   sfc:hasResourcePageSource <#sidebar-source> .
 
 <#sidebar-source> a sfc:ResourcePageSource ;
-  sfc:hasTargetLocatedFile <#sidebar-file> .
-
-<#sidebar-file> a sfc:WorkspaceRelativeFile, sflo:LocatedFile ;
-  sfc:workspaceRelativePath "mesh-content/sidebar.md" .
+  sfc:targetMeshPath "mesh-content/sidebar.md" .
