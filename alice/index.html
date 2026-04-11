@@ -4,56 +4,26 @@
   <meta charset="utf-8">
   <title>mesh-alice-bio alice</title>
   <link rel="canonical" href="https://semantic-flow.github.io/mesh-alice-bio/alice">
+  <link rel="stylesheet" href="./_knop/_assets/alice.css">
 </head>
-<body>
-  <main>
-    <h1><strong>alice</strong></h1>
-    <p>Resource page for the Semantic Flow identifier <a href="https://semantic-flow.github.io/mesh-alice-bio/alice">https://semantic-flow.github.io/mesh-alice-bio/alice</a>.</p>
-    <p>This Semantic Flow identifier denotes a <a href="https://schema.org/Person">schema:Person</a>.</p>
-    <section>
-      <h2>Supporting Semantic Flow Resources</h2>
+<body class="alice-custom-page">
+  <main class="alice-layout">
+    <article class="alice-main">
+      <h1>Alice</h1>
+      <p>This customized identifier page is driven by <code>alice/_knop/_page/page.ttl</code>.</p>
+      <p>Alice's integrated biography is available at <a href="./bio">./bio</a>, and the extracted Bob resource is available at <a href="../bob">../bob</a>.</p>
+    </article>
+    <aside class="alice-sidebar">
+      <h2>Quick links</h2>
       <ul>
-        <li>Knop: <a href="./_knop">./_knop</a></li>
-        <li>KnopMetadata: current file <a href="./_knop/_meta/meta.ttl">./_knop/_meta/meta.ttl</a>, history <a href="./_knop/_meta/_history001">./_knop/_meta/_history001</a></li>
-        <li>KnopInventory: current file <a href="./_knop/_inventory/inventory.ttl">./_knop/_inventory/inventory.ttl</a>, history <a href="./_knop/_inventory/_history001">./_knop/_inventory/_history001</a></li>
-        <li>ReferenceCatalog: current file <a href="./_knop/_references/references.ttl">./_knop/_references/references.ttl</a>, history <a href="./_knop/_references/_history001">./_knop/_references/_history001</a></li>
+        <li><a href="./_knop">Alice Knop</a></li>
+        <li><a href="./bio">Alice bio</a></li>
+        <li><a href="../bob">Bob</a></li>
       </ul>
-    </section>
-    <section>
-      <h2>Related Semantic Flow Resource</h2>
-      <ul>
-        <li><a href="./bio">./bio</a>: current payload file <a href="../alice-bio.ttl">../alice-bio.ttl</a>, current history <a href="./bio/_history001">./bio/_history001</a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Current Properties</h2>
-      <table>
-        <thead>
-          <tr><th>Predicate</th><th>Value</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="https://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></td>
-            <td><a href="https://schema.org/Person">schema:Person</a></td>
-          </tr>
-          <tr>
-            <td><a href="http://xmlns.com/foaf/0.1/name">foaf:name</a></td>
-            <td>Alice</td>
-          </tr>
-          <tr>
-            <td><a href="https://schema.org/birthDate">schema:birthDate</a></td>
-            <td>1990-01-15</td>
-          </tr>
-          <tr>
-            <td><a href="http://xmlns.com/foaf/0.1/knows">foaf:knows</a></td>
-            <td><a href="../bob">bob</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    </aside>
   </main>
   <footer>
-    <small>The Semantic Flow identifier <a href="https://semantic-flow.github.io/mesh-alice-bio/alice">https://semantic-flow.github.io/mesh-alice-bio/alice</a> has an associated Knop at <a href="./_knop">./_knop</a> and a related integrated bio resource at <a href="./bio">./bio</a>.</small>
+    <small>The Semantic Flow identifier <a href="https://semantic-flow.github.io/mesh-alice-bio/alice">https://semantic-flow.github.io/mesh-alice-bio/alice</a> is currently rendered from the page-definition support artifact at <a href="./_knop/_page">./_knop/_page</a>.</small>
   </footer>
 </body>
 </html>
