@@ -13,7 +13,7 @@
   sfc:hasTargetLocatedFile <#main-file> .
 
 <#main-file> a sfc:WorkspaceRelativeFile, sflo:LocatedFile ;
-  sfc:workspaceRelativePath "alice/_knop/main.md" .
+  sfc:workspaceRelativePath "alice/alice.md" .
 
 <#sidebar-region> a sfc:ResourcePageRegion ;
   sfc:regionKey "sidebar" ;
@@ -23,4 +23,4 @@
   sfc:hasTargetLocatedFile <#sidebar-file> .
 
 <#sidebar-file> a sfc:WorkspaceRelativeFile, sflo:LocatedFile ;
-  sfc:workspaceRelativePath "alice/_knop/sidebar.md" .
+  sfc:workspaceRelativePath "mesh-content/sidebar.md" .
