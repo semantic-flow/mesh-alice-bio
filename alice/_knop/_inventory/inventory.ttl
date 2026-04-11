@@ -7,7 +7,9 @@
   sflo:hasKnopInventory <alice/_knop/_inventory> ;
   sflo:hasWorkingKnopInventoryFile <alice/_knop/_inventory/inventory.ttl> ;
   sflo:hasReferenceCatalog <alice/_knop/_references> ;
-  sflo:hasResourcePage <alice/_knop/index.html> .
+  sflo:hasResourcePage <alice/_knop/index.html> ;
+  <https://semantic-flow.github.io/ontology/core/hasResourcePageDefinition> <alice/_knop/_page> ;
+  <https://semantic-flow.github.io/ontology/core/hasKnopAssetBundle> <alice/_knop/_assets> .
 
 <alice/_knop/_meta> a sflo:KnopMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
   sflo:hasArtifactHistory <alice/_knop/_meta/_history001> ;
@@ -46,6 +48,11 @@
   sflo:nextHistoryOrdinal "2"^^xsd:nonNegativeInteger ;
   sflo:hasWorkingLocatedFile <alice/_knop/_references/references.ttl> ;
   sflo:hasResourcePage <alice/_knop/_references/index.html> .
+
+<alice/_knop/_page> a <https://semantic-flow.github.io/ontology/core/ResourcePageDefinition>, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <alice/_knop/_page/page.ttl> .
+
+<alice/_knop/_assets> a <https://semantic-flow.github.io/ontology/core/KnopAssetBundle> .
 
 <alice/_knop/_inventory/_history001> a sflo:ArtifactHistory ;
   sflo:historyOrdinal "1"^^xsd:nonNegativeInteger ;
@@ -98,6 +105,8 @@
 <alice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <alice/_knop/_references/references.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<alice/_knop/_page/page.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <alice/_knop/_meta/_history001/_s0001/meta-ttl/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 

@@ -1,0 +1,26 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/alice/_knop/_page> .
+@prefix sflo: <https://semantic-flow.github.io/semantic-flow-ontology/> .
+@prefix sfc: <https://semantic-flow.github.io/ontology/core/> .
+
+<> a sfc:ResourcePageDefinition, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sfc:hasPageRegion <#main-region>, <#sidebar-region> .
+
+<#main-region> a sfc:ResourcePageRegion ;
+  sfc:regionKey "main" ;
+  sfc:hasResourcePageSource <#main-source> .
+
+<#main-source> a sfc:ResourcePageSource ;
+  sfc:hasTargetLocatedFile <#main-file> .
+
+<#main-file> a sfc:WorkspaceRelativeFile, sflo:LocatedFile ;
+  sfc:workspaceRelativePath "alice/_knop/main.md" .
+
+<#sidebar-region> a sfc:ResourcePageRegion ;
+  sfc:regionKey "sidebar" ;
+  sfc:hasResourcePageSource <#sidebar-source> .
+
+<#sidebar-source> a sfc:ResourcePageSource ;
+  sfc:hasTargetLocatedFile <#sidebar-file> .
+
+<#sidebar-file> a sfc:WorkspaceRelativeFile, sflo:LocatedFile ;
+  sfc:workspaceRelativePath "alice/_knop/sidebar.md" .
