@@ -10,7 +10,8 @@
   sfc:hasResourcePageSource <#main-source> .
 
 <#main-source> a sfc:ResourcePageSource ;
-  sfc:targetLocalRelativePath "alice/alice.md" .
+  sfc:hasTargetArtifact <https://semantic-flow.github.io/mesh-alice-bio/alice/page-main> ;
+  sfc:hasArtifactResolutionMode <https://semantic-flow.github.io/ontology/core/ArtifactResolutionMode/Current> .
 
 <#sidebar-region> a sfc:ResourcePageRegion ;
   sfc:regionKey "sidebar" ;
