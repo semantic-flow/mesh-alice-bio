@@ -8,6 +8,7 @@
   sflo:hasMeshInventory <_mesh/_inventory> ;
   sflo:hasKnop <alice/_knop> ;
   sflo:hasKnop <alice/bio/_knop> ;
+  sflo:hasKnop <alice/page-main/_knop> ;
   sflo:hasKnop <bob/_knop> ;
   sflo:hasResourcePage <_mesh/index.html> .
 
@@ -28,6 +29,12 @@
 <alice/bio/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <alice/bio/_knop/_inventory/inventory.ttl> ;
   sflo:hasResourcePage <alice/bio/_knop/index.html> .
+
+<alice/page-main> a sflo:PayloadArtifact, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <alice-page-main.md> .
+
+<alice/page-main/_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <alice/page-main/_knop/_inventory/inventory.ttl> .
 
 <bob/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <bob/_knop/_inventory/inventory.ttl> ;
@@ -135,9 +142,13 @@
 
 <alice/bio/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+<alice/page-main/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
 <bob/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <alice-bio.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<alice-page-main.md> a sflo:LocatedFile, sflo:RdfDocument .
 
 <_mesh/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
