@@ -1,13 +1,15 @@
 @base <https://semantic-flow.github.io/mesh-alice-bio/> .
 @prefix sflo: <https://semantic-flow.github.io/semantic-flow-ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sfc: <https://semantic-flow.github.io/ontology/core/> .
 
 <bob/_knop> a sflo:Knop ;
   sflo:hasKnopMetadata <bob/_knop/_meta> ;
   sflo:hasKnopInventory <bob/_knop/_inventory> ;
   sflo:hasReferenceCatalog <bob/_knop/_references> ;
   sflo:hasWorkingKnopInventoryFile <bob/_knop/_inventory/inventory.ttl> ;
-  sflo:hasResourcePage <bob/_knop/index.html> .
+  sflo:hasResourcePage <bob/_knop/index.html> ;
+  sfc:hasResourcePageDefinition <bob/_knop/_page> .
 
 <bob/_knop/_meta> a sflo:KnopMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
   sflo:hasArtifactHistory <bob/_knop/_meta/_history001> ;
@@ -64,6 +66,9 @@
   sflo:hasWorkingLocatedFile <bob/_knop/_references/references.ttl> ;
   sflo:hasResourcePage <bob/_knop/_references/index.html> .
 
+<bob/_knop/_page> a sfc:ResourcePageDefinition, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <bob/_knop/_page/page.ttl> .
+
 <bob/_knop/_references/_history001> a sflo:ArtifactHistory ;
   sflo:historyOrdinal "1"^^xsd:nonNegativeInteger ;
   sflo:hasHistoricalState <bob/_knop/_references/_history001/_s0001> ;
@@ -86,6 +91,8 @@
 <bob/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <bob/_knop/_references/references.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<bob/_knop/_page/page.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <bob/_knop/_meta/_history001/_s0001/meta-ttl/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 

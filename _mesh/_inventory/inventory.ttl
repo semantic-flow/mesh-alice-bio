@@ -1,6 +1,7 @@
 @base <https://semantic-flow.github.io/mesh-alice-bio/> .
 @prefix sflo: <https://semantic-flow.github.io/semantic-flow-ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sfc: <https://semantic-flow.github.io/ontology/core/> .
 
 <_mesh> a sflo:SemanticMesh ;
   sflo:meshBase "https://semantic-flow.github.io/mesh-alice-bio/"^^xsd:anyURI ;
@@ -10,6 +11,7 @@
   sflo:hasKnop <alice/bio/_knop> ;
   sflo:hasKnop <alice/page-main/_knop> ;
   sflo:hasKnop <bob/_knop> ;
+  sflo:hasKnop <bob/page-main/_knop> ;
   sflo:hasResourcePage <_mesh/index.html> .
 
 <alice>
@@ -41,6 +43,13 @@
 <bob/_knop> a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile <bob/_knop/_inventory/inventory.ttl> ;
   sflo:hasResourcePage <bob/_knop/index.html> .
+
+<bob/page-main> a sflo:PayloadArtifact, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <bob-page-main.md> ;
+  sfc:workingAccessUrl "https://raw.githubusercontent.com/djradon/public-notes/refs/heads/main/user.bob-newhart.md"^^xsd:anyURI .
+
+<bob/page-main/_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <bob/page-main/_knop/_inventory/inventory.ttl> .
 
 <_mesh/_meta> a sflo:MeshMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
   sflo:hasArtifactHistory <_mesh/_meta/_history001> ;
@@ -162,9 +171,13 @@
 
 <bob/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
+<bob/page-main/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
 <alice-bio.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <alice-page-main.md> a sflo:LocatedFile, sflo:RdfDocument .
+
+<bob-page-main.md> a sflo:LocatedFile, sflo:RdfDocument .
 
 <_mesh/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
