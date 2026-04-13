@@ -6,7 +6,9 @@
   sflo:hasKnopMetadata <_knop/_meta> ;
   sflo:hasKnopInventory <_knop/_inventory> ;
   sflo:hasWorkingKnopInventoryFile <_knop/_inventory/inventory.ttl> ;
-  sflo:hasResourcePage <_knop/index.html> .
+  sflo:hasResourcePage <_knop/index.html> ;
+  <https://semantic-flow.github.io/ontology/core/hasResourcePageDefinition> <_knop/_page> ;
+  <https://semantic-flow.github.io/ontology/core/hasKnopAssetBundle> <_knop/_assets> .
 
 <_knop/_meta> a sflo:KnopMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
   sflo:hasArtifactHistory <_knop/_meta/_history001> ;
@@ -39,6 +41,11 @@
   sflo:hasWorkingLocatedFile <_knop/_inventory/inventory.ttl> ;
   sflo:hasResourcePage <_knop/_inventory/index.html> .
 
+<_knop/_page> a <https://semantic-flow.github.io/ontology/core/ResourcePageDefinition>, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <_knop/_page/page.ttl> .
+
+<_knop/_assets> a <https://semantic-flow.github.io/ontology/core/KnopAssetBundle> .
+
 <_knop/_inventory/_history001> a sflo:ArtifactHistory ;
   sflo:historyOrdinal "1"^^xsd:nonNegativeInteger ;
   sflo:hasHistoricalState <_knop/_inventory/_history001/_s0001> ;
@@ -59,6 +66,8 @@
 <_knop/_meta/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<_knop/_page/page.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <_knop/_meta/_history001/_s0001/meta-ttl/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
