@@ -1,0 +1,14 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/bob/_knop/_page> .
+@prefix sflo: <https://semantic-flow.github.io/semantic-flow-ontology/> .
+@prefix sfc: <https://semantic-flow.github.io/ontology/core/> .
+
+<> a sfc:ResourcePageDefinition, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sfc:hasPageRegion <#main-region> .
+
+<#main-region> a sfc:ResourcePageRegion ;
+  sfc:regionKey "main" ;
+  sfc:hasResourcePageSource <#main-source> .
+
+<#main-source> a sfc:ResourcePageSource ;
+  sfc:hasTargetArtifact <https://semantic-flow.github.io/mesh-alice-bio/bob/page-main> ;
+  sfc:hasArtifactResolutionMode <https://semantic-flow.github.io/ontology/core/ArtifactResolutionMode/Current> .

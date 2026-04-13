@@ -8,7 +8,8 @@
   sflo:hasKnopInventory <bob/_knop/_inventory> ;
   sfc:hasExtractionSource <bob/_knop/_inventory#extraction-source> ;
   sflo:hasWorkingKnopInventoryFile <bob/_knop/_inventory/inventory.ttl> ;
-  sflo:hasResourcePage <bob/_knop/index.html> .
+  sflo:hasResourcePage <bob/_knop/index.html> ;
+  sfc:hasResourcePageDefinition <bob/_knop/_page> .
 
 <bob/_knop/_inventory#extraction-source> a sfc:ExtractionSource ;
   sfc:hasTargetArtifact <alice/bio> ;
@@ -63,9 +64,14 @@
   sflo:hasLocatedFile <bob/_knop/_inventory/_history001/_s0001/inventory-ttl/inventory.ttl> ;
   sflo:hasResourcePage <bob/_knop/_inventory/_history001/_s0001/inventory-ttl/index.html> .
 
+<bob/_knop/_page> a sfc:ResourcePageDefinition, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <bob/_knop/_page/page.ttl> .
+
 <bob/_knop/_meta/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <bob/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<bob/_knop/_page/page.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <bob/_knop/_meta/_history001/_s0001/meta-ttl/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
