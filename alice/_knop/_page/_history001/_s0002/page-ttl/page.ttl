@@ -18,4 +18,4 @@
   sfc:hasResourcePageSource <#sidebar-source> .
 
 <#sidebar-source> a sfc:ResourcePageSource ;
-  sfc:targetMeshPath "mesh-content/sidebar.md" .
+  sfc:targetLocalRelativePath "mesh-content/sidebar.md" .
