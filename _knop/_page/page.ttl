@@ -10,11 +10,11 @@
   sfc:hasResourcePageSource <#main-source> .
 
 <#main-source> a sfc:ResourcePageSource ;
-  sfc:targetMeshPath "home.md" .
+  sfc:targetLocalRelativePath "home.md" .
 
 <#sidebar-region> a sfc:ResourcePageRegion ;
   sfc:regionKey "sidebar" ;
   sfc:hasResourcePageSource <#sidebar-source> .
 
 <#sidebar-source> a sfc:ResourcePageSource ;
-  sfc:targetMeshPath "mesh-content/root-sidebar.md" .
+  sfc:targetLocalRelativePath "mesh-content/root-sidebar.md" .
