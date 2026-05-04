@@ -94,19 +94,18 @@
                 </div>
               </details>
             </details>
+            <details class="wf-history-node wf-history-node--state" open>
+              <summary class="wf-history-node-header"><a href="/mesh-alice-bio/bob/_knop/_inventory/_history001/_s0002">_s0002</a> <span class="wf-history-class">sflo:HistoricalState</span></summary>
+              <details class="wf-history-node wf-history-node--manifestation" open>
+                <summary class="wf-history-node-header"><a href="/mesh-alice-bio/bob/_knop/_inventory/_history001/_s0002/inventory-ttl">inventory-ttl</a> <span class="wf-history-class">sflo:ArtifactManifestation</span></summary>
+                <div class="wf-history-node wf-history-node--file">
+                  <div class="wf-history-node-header"><a href="/mesh-alice-bio/bob/_knop/_inventory/_history001/_s0002/inventory-ttl/inventory.ttl" class="wf-history-file-iri">https://semantic-flow.github.io/mesh-alice-bio/bob/_knop/_inventory/_history001/_s0002/inventory-ttl/inventory.ttl</a> <span class="wf-history-class">sflo:LocatedFile</span></div>
+                </div>
+              </details>
+            </details>
           </details>
         </div>
       </details>
-    </section>
-    <section class="wf-section" id="extraction-source">
-      <h2>Extraction Source</h2>
-      <table class="wf-metadata">
-        <tbody>
-          <tr><th scope="row">Target Artifact</th><td><a href="/mesh-alice-bio/alice/bio">alice/bio</a></td></tr>
-          <tr><th scope="row">Requested Target State</th><td><a href="/mesh-alice-bio/alice/bio/_history001/_s0002">alice/bio/_history001/_s0002</a></td></tr>
-          <tr><th scope="row">Resolution Mode</th><td><a href="https://semantic-flow.github.io/ontology/core/ArtifactResolutionMode/Pinned">sfc:ArtifactResolutionMode/Pinned</a></td></tr>
-        </tbody>
-      </table>
     </section>
 
     <section class="wf-source">
@@ -118,20 +117,15 @@
         </div>
         <pre><code>@base &lt;https://semantic-flow.github.io/mesh-alice-bio/&gt; .
 @prefix sflo: &lt;https://semantic-flow.github.io/semantic-flow-ontology/&gt; .
-@prefix sfc: &lt;https://semantic-flow.github.io/ontology/core/&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 &lt;bob/_knop&gt; a sflo:Knop ;
   sflo:hasKnopMetadata &lt;bob/_knop/_meta&gt; ;
   sflo:hasKnopInventory &lt;bob/_knop/_inventory&gt; ;
-  sfc:hasExtractionSource &lt;bob/_knop/_inventory#extraction-source&gt; ;
   sflo:hasWorkingKnopInventoryFile &lt;bob/_knop/_inventory/inventory.ttl&gt; ;
-  sflo:hasResourcePage &lt;bob/_knop/index.html&gt; .
 
-&lt;bob/_knop/_inventory#extraction-source&gt; a sfc:ExtractionSource ;
-  sfc:hasTargetArtifact &lt;alice/bio&gt; ;
-  sfc:hasRequestedTargetState &lt;alice/bio/_history001/_s0002&gt; ;
-  sfc:hasArtifactResolutionMode &lt;https://semantic-flow.github.io/ontology/core/ArtifactResolutionMode/Pinned&gt; .
+  sflo:hasResourcePage &lt;bob/_knop/index.html&gt; ;
+  &lt;https://semantic-flow.github.io/ontology/core/hasResourcePageDefinition&gt; &lt;bob/_knop/_page&gt; .
 
 &lt;bob/_knop/_meta&gt; a sflo:KnopMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
   sflo:hasArtifactHistory &lt;bob/_knop/_meta/_history001&gt; ;
@@ -164,11 +158,37 @@
   sflo:hasWorkingLocatedFile &lt;bob/_knop/_inventory/inventory.ttl&gt; ;
   sflo:hasResourcePage &lt;bob/_knop/_inventory/index.html&gt; .
 
-&lt;bob/_knop/_inventory/_history001&gt; a sflo:ArtifactHistory ;
+
+&lt;bob/_knop/_page&gt; a &lt;https://semantic-flow.github.io/ontology/core/ResourcePageDefinition&gt;, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasArtifactHistory &lt;bob/_knop/_page/_history001&gt; ;
+  sflo:currentArtifactHistory &lt;bob/_knop/_page/_history001&gt; ;
+  sflo:nextHistoryOrdinal &quot;2&quot;^^xsd:nonNegativeInteger ;
+  sflo:hasWorkingLocatedFile &lt;bob/_knop/_page/page.ttl&gt; ;
+  sflo:hasResourcePage &lt;bob/_knop/_page/index.html&gt; .
+
+&lt;bob/_knop/_page/_history001&gt; a sflo:ArtifactHistory ;
+  sflo:hasHistoricalState &lt;bob/_knop/_page/_history001/_s0001&gt; ;
   sflo:historyOrdinal &quot;1&quot;^^xsd:nonNegativeInteger ;
-  sflo:hasHistoricalState &lt;bob/_knop/_inventory/_history001/_s0001&gt; ;
-  sflo:latestHistoricalState &lt;bob/_knop/_inventory/_history001/_s0001&gt; ;
+  sflo:latestHistoricalState &lt;bob/_knop/_page/_history001/_s0001&gt; ;
   sflo:nextStateOrdinal &quot;2&quot;^^xsd:nonNegativeInteger ;
+  sflo:hasResourcePage &lt;bob/_knop/_page/_history001/index.html&gt; .
+
+&lt;bob/_knop/_page/_history001/_s0001&gt; a sflo:HistoricalState ;
+  sflo:stateOrdinal &quot;1&quot;^^xsd:nonNegativeInteger ;
+  sflo:hasManifestation &lt;bob/_knop/_page/_history001/_s0001/page-ttl&gt; ;
+  sflo:locatedFileForState &lt;bob/_knop/_page/_history001/_s0001/page-ttl/page.ttl&gt; ;
+  sflo:hasResourcePage &lt;bob/_knop/_page/_history001/_s0001/index.html&gt; .
+
+&lt;bob/_knop/_page/_history001/_s0001/page-ttl&gt; a sflo:ArtifactManifestation, sflo:RdfDocument ;
+  sflo:hasLocatedFile &lt;bob/_knop/_page/_history001/_s0001/page-ttl/page.ttl&gt; ;
+  sflo:hasResourcePage &lt;bob/_knop/_page/_history001/_s0001/page-ttl/index.html&gt; .
+
+&lt;bob/_knop/_inventory/_history001&gt; a sflo:ArtifactHistory ;
+  sflo:hasHistoricalState &lt;bob/_knop/_inventory/_history001/_s0001&gt; ;
+  sflo:hasHistoricalState &lt;bob/_knop/_inventory/_history001/_s0002&gt; ;
+  sflo:historyOrdinal &quot;1&quot;^^xsd:nonNegativeInteger ;
+  sflo:latestHistoricalState &lt;bob/_knop/_inventory/_history001/_s0002&gt; ;
+  sflo:nextStateOrdinal &quot;3&quot;^^xsd:nonNegativeInteger ;
   sflo:hasResourcePage &lt;bob/_knop/_inventory/_history001/index.html&gt; .
 
 &lt;bob/_knop/_inventory/_history001/_s0001&gt; a sflo:HistoricalState ;
@@ -177,17 +197,37 @@
   sflo:locatedFileForState &lt;bob/_knop/_inventory/_history001/_s0001/inventory-ttl/inventory.ttl&gt; ;
   sflo:hasResourcePage &lt;bob/_knop/_inventory/_history001/_s0001/index.html&gt; .
 
+&lt;bob/_knop/_inventory/_history001/_s0002&gt; a sflo:HistoricalState ;
+  sflo:stateOrdinal &quot;2&quot;^^xsd:nonNegativeInteger ;
+  sflo:previousHistoricalState &lt;bob/_knop/_inventory/_history001/_s0001&gt; ;
+  sflo:hasManifestation &lt;bob/_knop/_inventory/_history001/_s0002/inventory-ttl&gt; ;
+  sflo:locatedFileForState &lt;bob/_knop/_inventory/_history001/_s0002/inventory-ttl/inventory.ttl&gt; ;
+  sflo:hasResourcePage &lt;bob/_knop/_inventory/_history001/_s0002/index.html&gt; .
+
 &lt;bob/_knop/_inventory/_history001/_s0001/inventory-ttl&gt; a sflo:ArtifactManifestation, sflo:RdfDocument ;
   sflo:hasLocatedFile &lt;bob/_knop/_inventory/_history001/_s0001/inventory-ttl/inventory.ttl&gt; ;
   sflo:hasResourcePage &lt;bob/_knop/_inventory/_history001/_s0001/inventory-ttl/index.html&gt; .
+
+&lt;bob/_knop/_inventory/_history001/_s0002/inventory-ttl&gt; a sflo:ArtifactManifestation, sflo:RdfDocument ;
+  sflo:hasLocatedFile &lt;bob/_knop/_inventory/_history001/_s0002/inventory-ttl/inventory.ttl&gt; ;
+  sflo:hasResourcePage &lt;bob/_knop/_inventory/_history001/_s0002/inventory-ttl/index.html&gt; .
+
 
 &lt;bob/_knop/_meta/meta.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
 
 &lt;bob/_knop/_inventory/inventory.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
 
+
+&lt;bob/_knop/_page/page.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
+
 &lt;bob/_knop/_meta/_history001/_s0001/meta-ttl/meta.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
 
 &lt;bob/_knop/_inventory/_history001/_s0001/inventory-ttl/inventory.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
+
+&lt;bob/_knop/_inventory/_history001/_s0002/inventory-ttl/inventory.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
+
+
+&lt;bob/_knop/_page/_history001/_s0001/page-ttl/page.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
 
 &lt;bob/_knop/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
 
@@ -206,6 +246,19 @@
 &lt;bob/_knop/_inventory/_history001/_s0001/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
 
 &lt;bob/_knop/_inventory/_history001/_s0001/inventory-ttl/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
+
+&lt;bob/_knop/_inventory/_history001/_s0002/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
+
+&lt;bob/_knop/_inventory/_history001/_s0002/inventory-ttl/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
+
+
+&lt;bob/_knop/_page/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
+
+&lt;bob/_knop/_page/_history001/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
+
+&lt;bob/_knop/_page/_history001/_s0001/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
+
+&lt;bob/_knop/_page/_history001/_s0001/page-ttl/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
 </code></pre>
       </details>
     </section>
