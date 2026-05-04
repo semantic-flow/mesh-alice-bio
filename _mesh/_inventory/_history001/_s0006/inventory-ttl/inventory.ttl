@@ -251,6 +251,8 @@
 
 <_mesh/_inventory/_history001/_s0004/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
+<_mesh/_inventory/_history001/_s0004/inventory-ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
 <_mesh/_inventory/_history001/_s0005/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <_mesh/_inventory/_history001/_s0005/inventory-ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
@@ -258,5 +260,3 @@
 <_mesh/_inventory/_history001/_s0006/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <_mesh/_inventory/_history001/_s0006/inventory-ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
-
-<_mesh/_inventory/_history001/_s0004/inventory-ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .

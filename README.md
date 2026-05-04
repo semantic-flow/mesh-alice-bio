@@ -18,7 +18,7 @@ The current scenario ladder is:
 - `09-alice-bio-referenced-woven`: the result of weaving `08`, versioning the new `ReferenceCatalog` and advancing `alice/_knop/_inventory` without widening mesh inventory.
 - `10-alice-bio-updated`: update the working `alice-bio.ttl` payload to use mesh-root IRIs, assert `alice/bio` authorship, and describe Bob locally.
 - `11-alice-bio-v2-woven`: the result of weaving `10`, creating a second payload state for `alice/bio`, advancing `alice/bio/_knop/_inventory`, and regenerating the key public pages.
-- `12-bob-extracted`: create Bob's minimal Knop-managed surface from the local Bob reference, including `bob/_knop/_meta`, `bob/_knop/_inventory`, and a Supplemental `ReferenceLink` back to `alice/bio`, but without splitting the payload or generating pages yet.
+- `12-bob-extracted`: create Bob's minimal Knop-managed surface from the local Bob reference, including `bob/_knop/_meta`, `bob/_knop/_inventory`, and an inventory `sfc:ExtractionSource` pinned to `alice/bio`, but without splitting the payload or generating pages yet.
 - `13-bob-extracted-woven`: the result of weaving `12`, versioning Bob's support artifacts, generating the Bob-facing pages, and advancing mesh inventory because Bob now has public woven surface pages.
 
 How to read the ladder:
