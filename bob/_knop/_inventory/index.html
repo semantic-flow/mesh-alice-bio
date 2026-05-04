@@ -2,13 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>mesh-alice-bio bob/_knop/_inventory</title>
   <link rel="canonical" href="https://semantic-flow.github.io/mesh-alice-bio/bob/_knop/_inventory">
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f7f4; color: #20231f; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: linear-gradient(180deg, #f6f7f4 0%, #ebece7 100%); }
+    a { color: #1f5f85; text-decoration-thickness: 0.08em; text-underline-offset: 0.18em; }
+    main { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 42px; }
+    .wf-shell { display: grid; gap: 18px; }
+    .wf-eyebrow { margin: 0 0 10px; color: #5e675d; font-size: 0.82rem; letter-spacing: 0; font-weight: 700; }
+    .wf-breadcrumbs { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+    .wf-breadcrumbs a { color: inherit; text-decoration-color: rgba(94, 103, 93, 0.45); }
+    .wf-hero { border-top: 5px solid #435247; padding: 26px 0 12px; }
+    h1 { margin: 0; overflow-wrap: anywhere; font-size: clamp(1.7rem, 4vw, 2.7rem); line-height: 1.04; letter-spacing: 0; }
+    .wf-classes { margin: 8px 0 0; color: #687167; font-style: italic; }
+    .wf-summary { max-width: 820px; margin: 14px 0 0; color: #3f463f; font-size: 1.05rem; line-height: 1.6; }
+    .wf-metadata { width: 100%; margin-top: 24px; border-collapse: collapse; border-top: 1px solid #cdd2ca; border-bottom: 1px solid #cdd2ca; }
+    .wf-metadata th, .wf-metadata td { padding: 10px 12px; border-top: 1px solid #e0e4dd; text-align: left; vertical-align: top; }
+    .wf-metadata tr:first-child th, .wf-metadata tr:first-child td { border-top: 0; }
+    .wf-metadata th { width: 180px; color: #4f594f; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0; }
+    .wf-metadata td { overflow-wrap: anywhere; }
+    .wf-term { cursor: help; border-bottom: 1px dotted currentColor; }
+    .wf-date-tip { position: relative; display: inline-block; }
+    .wf-date-tip::after { content: attr(data-tooltip); position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%); opacity: 0; pointer-events: none; background: rgba(27, 32, 27, 0.94); color: #fff; border-radius: 5px; padding: 5px 7px; font-size: 0.78rem; white-space: nowrap; transition: opacity 120ms ease; }
+    .wf-date-tip:hover::after, .wf-date-tip:focus::after { opacity: 1; }
+    .wf-section, .wf-source { margin-top: 24px; border-top: 1px solid #cdd2ca; padding-top: 18px; }
+    h2 { margin: 0 0 12px; font-size: 1rem; line-height: 1.25; letter-spacing: 0; color: #2f382f; }
+    ul { margin: 0; padding-left: 1.2rem; }
+    li { margin: 0.45rem 0; line-height: 1.45; }
+    code, pre { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+    code { background: #e9ece6; border-radius: 4px; padding: 0.12rem 0.25rem; }
+    details { border: 1px solid #c9cec7; border-radius: 8px; background: #fff; }
+    details + details { margin-top: 12px; }
+    summary { cursor: pointer; padding: 12px 14px; font-weight: 750; }
+    .wf-history { padding-bottom: 12px; }
+    .wf-history-tree { display: grid; gap: 10px; padding: 0 14px 4px; }
+    .wf-history-node { border: 1px solid #d5dbd3; border-radius: 8px; padding: 10px; }
+    .wf-history-node + .wf-history-node, .wf-history-node .wf-history-node { margin-top: 8px; }
+    .wf-history-node--history { background: #f8faf7; }
+    .wf-history-node--state { background: #eef3ef; }
+    .wf-history-node--manifestation { background: #e7eee9; }
+    .wf-history-node--file { background: #dfe8e2; }
+    .wf-history-node-header { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }
+    .wf-history-node > summary.wf-history-node-header { display: list-item; padding: 0; }
+    .wf-history-class { color: #687167; font-style: italic; font-size: 0.85rem; }
+    .wf-history-file-iri { font-size: 0.82rem; overflow-wrap: anywhere; }
+    .wf-source-meta { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 14px 12px; color: #596259; font-size: 0.88rem; }
+    pre { margin: 0; max-height: 64vh; overflow: auto; border-top: 1px solid #d7dcd4; background: #151a16; color: #e7ece4; padding: 16px; font-size: 0.86rem; line-height: 1.55; tab-size: 2; }
+    pre code { display: block; background: transparent; color: inherit; border-radius: 0; padding: 0; white-space: pre; }
+    .wf-generated { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 8px 0 32px; text-align: center; color: rgba(49, 57, 49, 0.42); font-size: 0.78rem; }
+    .wf-generated a { color: inherit; font-weight: 700; }
+  </style>
+  <script>
+    if (location.pathname.endsWith("/") && !location.search && !location.hash) {
+      history.replaceState(null, "", location.pathname.slice(0, -1));
+    }
+  </script>
 </head>
 <body>
   <main>
-    <h1>bob/_knop/_inventory</h1>
-    <p>Generated resource page for bob/_knop/_inventory.</p>
+    <article class="wf-shell">
+      <header class="wf-hero">
+        <nav class="wf-eyebrow wf-breadcrumbs" aria-label="Breadcrumb">
+<a href="/mesh-alice-bio/">mesh-alice-bio</a> <span aria-hidden="true">/</span> <a href="/mesh-alice-bio/bob">bob</a> <span aria-hidden="true">/</span> <a href="/mesh-alice-bio/bob/_knop">_knop</a>
+        </nav>
+        <h1>bob/_knop/_inventory</h1>
+        <p class="wf-classes">a sflo:RdfDocument</p>
+        <p class="wf-summary">Inventory for bob/_knop</p>
+        <table class="wf-metadata">
+          <tbody>
+            <tr><th scope="row">Canonical IRI</th><td><span>https://semantic-flow.github.io/mesh-alice-bio/bob/_knop/_inventory</span></td></tr>
+          </tbody>
+        </table>
+
+      </header>
+    <section class="wf-section">
+      <details class="wf-history">
+        <summary>History</summary>
+        <div class="wf-history-tree">
+          <details class="wf-history-node wf-history-node--history" open>
+            <summary class="wf-history-node-header"><a href="/mesh-alice-bio/bob/_knop/_inventory/_history001">bob/_knop/_inventory/_history001</a> <span class="wf-history-class">sflo:ArtifactHistory</span></summary>
+            <details class="wf-history-node wf-history-node--state" open>
+              <summary class="wf-history-node-header"><a href="/mesh-alice-bio/bob/_knop/_inventory/_history001/_s0001">_s0001</a> <span class="wf-history-class">sflo:HistoricalState</span></summary>
+              <details class="wf-history-node wf-history-node--manifestation" open>
+                <summary class="wf-history-node-header"><a href="/mesh-alice-bio/bob/_knop/_inventory/_history001/_s0001/inventory-ttl">inventory-ttl</a> <span class="wf-history-class">sflo:ArtifactManifestation</span></summary>
+                <div class="wf-history-node wf-history-node--file">
+                  <div class="wf-history-node-header"><a href="/mesh-alice-bio/bob/_knop/_inventory/_history001/_s0001/inventory-ttl/inventory.ttl" class="wf-history-file-iri">https://semantic-flow.github.io/mesh-alice-bio/bob/_knop/_inventory/_history001/_s0001/inventory-ttl/inventory.ttl</a> <span class="wf-history-class">sflo:LocatedFile</span></div>
+                </div>
+              </details>
+            </details>
+            <details class="wf-history-node wf-history-node--state" open>
+              <summary class="wf-history-node-header"><a href="/mesh-alice-bio/bob/_knop/_inventory/_history001/_s0002">_s0002</a> <span class="wf-history-class">sflo:HistoricalState</span></summary>
+              <details class="wf-history-node wf-history-node--manifestation" open>
+                <summary class="wf-history-node-header"><a href="/mesh-alice-bio/bob/_knop/_inventory/_history001/_s0002/inventory-ttl">inventory-ttl</a> <span class="wf-history-class">sflo:ArtifactManifestation</span></summary>
+                <div class="wf-history-node wf-history-node--file">
+                  <div class="wf-history-node-header"><a href="/mesh-alice-bio/bob/_knop/_inventory/_history001/_s0002/inventory-ttl/inventory.ttl" class="wf-history-file-iri">https://semantic-flow.github.io/mesh-alice-bio/bob/_knop/_inventory/_history001/_s0002/inventory-ttl/inventory.ttl</a> <span class="wf-history-class">sflo:LocatedFile</span></div>
+                </div>
+              </details>
+            </details>
+          </details>
+        </div>
+      </details>
+    </section>
+
+    </article>
   </main>
+  <footer class="wf-generated">
+    Generated on <span class="wf-term wf-date-tip" tabindex="0" title="2026-05-04T06:28:30.240Z" data-tooltip="2026-05-04T06:28:30.240Z">May 4, 2026</span> by <a href="https://github.com/semantic-flow/weave/">Weave</a>
+  </footer>
 </body>
 </html>
