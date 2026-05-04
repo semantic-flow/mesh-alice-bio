@@ -51,8 +51,8 @@
     .wf-history-class { color: #687167; font-style: italic; font-size: 0.85rem; }
     .wf-history-file-iri { font-size: 0.82rem; overflow-wrap: anywhere; }
     .wf-source-meta { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 14px 12px; color: #596259; font-size: 0.88rem; }
-    pre { margin: 0; max-height: 64vh; overflow: auto; border-top: 1px solid #d7dcd4; background: #151a16; color: #e7ece4; padding: 16px; font-size: 0.86rem; line-height: 1.55; tab-size: 2; }
-    pre code { display: block; background: transparent; color: inherit; border-radius: 0; padding: 0; white-space: pre; }
+    pre { margin: 0; max-height: 64vh; overflow: auto; border-top: 1px solid #d7dcd4; background: #151a16; color: #e7ece4; padding: 16px; font-size: 0.86rem; line-height: 1.55; tab-size: 2; white-space: pre-wrap; overflow-wrap: anywhere; }
+    pre code { display: block; background: transparent; color: inherit; border-radius: 0; padding: 0; white-space: inherit; overflow-wrap: inherit; }
     .wf-generated { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 8px 0 32px; text-align: center; color: rgba(49, 57, 49, 0.42); font-size: 0.78rem; }
     .wf-generated a { color: inherit; font-weight: 700; }
   </style>
@@ -130,6 +130,15 @@
                 </div>
               </details>
             </details>
+            <details class="wf-history-node wf-history-node--state" open>
+              <summary class="wf-history-node-header"><a href="/mesh-alice-bio/_mesh/_inventory/_history001/_s0006">_s0006</a> <span class="wf-history-class">sflo:HistoricalState</span></summary>
+              <details class="wf-history-node wf-history-node--manifestation" open>
+                <summary class="wf-history-node-header"><a href="/mesh-alice-bio/_mesh/_inventory/_history001/_s0006/inventory-ttl">inventory-ttl</a> <span class="wf-history-class">sflo:ArtifactManifestation</span></summary>
+                <div class="wf-history-node wf-history-node--file">
+                  <div class="wf-history-node-header"><a href="/mesh-alice-bio/_mesh/_inventory/_history001/_s0006/inventory-ttl/inventory.ttl" class="wf-history-file-iri">https://semantic-flow.github.io/mesh-alice-bio/_mesh/_inventory/_history001/_s0006/inventory-ttl/inventory.ttl</a> <span class="wf-history-class">sflo:LocatedFile</span></div>
+                </div>
+              </details>
+            </details>
           </details>
         </div>
       </details>
@@ -151,12 +160,16 @@
   sflo:meshBase &quot;https://semantic-flow.github.io/mesh-alice-bio/&quot;^^xsd:anyURI ;
   sflo:hasMeshMetadata &lt;_mesh/_meta&gt; ;
   sflo:hasMeshInventory &lt;_mesh/_inventory&gt; ;
+  sflo:hasKnop &lt;_knop&gt; ;
   sflo:hasKnop &lt;alice/_knop&gt; ;
   sflo:hasKnop &lt;alice/bio/_knop&gt; ;
   sflo:hasKnop &lt;alice/page-main/_knop&gt; ;
   sflo:hasKnop &lt;bob/_knop&gt; ;
   sflo:hasKnop &lt;bob/page-main/_knop&gt; ;
   sflo:hasResourcePage &lt;_mesh/index.html&gt; .
+
+&lt;&gt;
+  sflo:hasResourcePage &lt;index.html&gt; .
 
 &lt;alice&gt;
   sflo:hasResourcePage &lt;alice/index.html&gt; .
@@ -194,6 +207,10 @@
 
 &lt;bob/page-main/_knop&gt; a sflo:Knop ;
   sflo:hasWorkingKnopInventoryFile &lt;bob/page-main/_knop/_inventory/inventory.ttl&gt; .
+
+&lt;_knop&gt; a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile &lt;_knop/_inventory/inventory.ttl&gt; ;
+  sflo:hasResourcePage &lt;_knop/index.html&gt; .
 
 &lt;_mesh/_meta&gt; a sflo:MeshMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
   sflo:hasArtifactHistory &lt;_mesh/_meta/_history001&gt; ;
@@ -233,8 +250,9 @@
   sflo:hasHistoricalState &lt;_mesh/_inventory/_history001/_s0003&gt; ;
   sflo:hasHistoricalState &lt;_mesh/_inventory/_history001/_s0004&gt; ;
   sflo:hasHistoricalState &lt;_mesh/_inventory/_history001/_s0005&gt; ;
-  sflo:latestHistoricalState &lt;_mesh/_inventory/_history001/_s0005&gt; ;
-  sflo:nextStateOrdinal &quot;6&quot;^^xsd:nonNegativeInteger ;
+  sflo:hasHistoricalState &lt;_mesh/_inventory/_history001/_s0006&gt; ;
+  sflo:latestHistoricalState &lt;_mesh/_inventory/_history001/_s0006&gt; ;
+  sflo:nextStateOrdinal &quot;7&quot;^^xsd:nonNegativeInteger ;
   sflo:hasResourcePage &lt;_mesh/_inventory/_history001/index.html&gt; .
 
 &lt;_mesh/_inventory/_history001/_s0001&gt; a sflo:HistoricalState ;
@@ -291,9 +309,22 @@
   sflo:hasLocatedFile &lt;_mesh/_inventory/_history001/_s0005/inventory-ttl/inventory.ttl&gt; ;
   sflo:hasResourcePage &lt;_mesh/_inventory/_history001/_s0005/inventory-ttl/index.html&gt; .
 
+&lt;_mesh/_inventory/_history001/_s0006&gt; a sflo:HistoricalState ;
+  sflo:stateOrdinal &quot;6&quot;^^xsd:nonNegativeInteger ;
+  sflo:previousHistoricalState &lt;_mesh/_inventory/_history001/_s0005&gt; ;
+  sflo:hasManifestation &lt;_mesh/_inventory/_history001/_s0006/inventory-ttl&gt; ;
+  sflo:locatedFileForState &lt;_mesh/_inventory/_history001/_s0006/inventory-ttl/inventory.ttl&gt; ;
+  sflo:hasResourcePage &lt;_mesh/_inventory/_history001/_s0006/index.html&gt; .
+
+&lt;_mesh/_inventory/_history001/_s0006/inventory-ttl&gt; a sflo:ArtifactManifestation, sflo:RdfDocument ;
+  sflo:hasLocatedFile &lt;_mesh/_inventory/_history001/_s0006/inventory-ttl/inventory.ttl&gt; ;
+  sflo:hasResourcePage &lt;_mesh/_inventory/_history001/_s0006/inventory-ttl/index.html&gt; .
+
 &lt;_mesh/_meta/meta.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
 
 &lt;_mesh/_inventory/inventory.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
+
+&lt;_knop/_inventory/inventory.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
 
 &lt;_mesh/_meta/_history001/_s0001/meta-ttl/meta.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
 
@@ -306,6 +337,8 @@
 &lt;_mesh/_inventory/_history001/_s0004/inventory-ttl/inventory.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
 
 &lt;_mesh/_inventory/_history001/_s0005/inventory-ttl/inventory.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
+
+&lt;_mesh/_inventory/_history001/_s0006/inventory-ttl/inventory.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
 
 &lt;alice/_knop/_inventory/inventory.ttl&gt; a sflo:LocatedFile, sflo:RdfDocument .
 
@@ -324,6 +357,10 @@
 &lt;bob-page-main.md&gt; a sflo:LocatedFile, sflo:RdfDocument .
 
 &lt;_mesh/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
+
+&lt;index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
+
+&lt;_knop/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
 
 &lt;alice/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
 
@@ -372,6 +409,10 @@
 &lt;_mesh/_inventory/_history001/_s0005/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
 
 &lt;_mesh/_inventory/_history001/_s0005/inventory-ttl/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
+
+&lt;_mesh/_inventory/_history001/_s0006/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
+
+&lt;_mesh/_inventory/_history001/_s0006/inventory-ttl/index.html&gt; a sflo:ResourcePage, sflo:LocatedFile .
 </code></pre>
       </details>
     </section>
