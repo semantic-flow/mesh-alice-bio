@@ -1,0 +1,72 @@
+body.root-custom-page {
+  margin: 0;
+  background: linear-gradient(180deg, #f4efe4 0%, #fbf9f3 48%, #efe8d8 100%);
+  color: #1d1a16;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.root-layout {
+  box-sizing: border-box;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .root-layout {
+    grid-template-columns: minmax(0, 2fr) minmax(250px, 1fr);
+    align-items: start;
+  }
+}
+
+.root-main,
+.root-sidebar {
+  background: rgba(255, 252, 246, 0.9);
+  border: 1px solid rgba(53, 43, 32, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(53, 43, 32, 0.08);
+}
+
+.root-main {
+  padding: 2rem;
+}
+
+.root-sidebar {
+  padding: 1.5rem;
+  position: sticky;
+  top: 1.5rem;
+}
+
+.root-main h1,
+.root-sidebar h1,
+.root-sidebar h2 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+.root-main p,
+.root-sidebar p,
+.root-sidebar li,
+.root-main li {
+  line-height: 1.6;
+}
+
+.root-main code,
+.root-sidebar code {
+  background: rgba(73, 57, 38, 0.08);
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+  font-size: 0.95em;
+}
+
+.root-main a,
+.root-sidebar a,
+footer a {
+  color: #6d2f1d;
+}
+
+footer {
+  padding: 0 1.5rem 2rem;
+}
