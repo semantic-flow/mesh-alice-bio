@@ -1,7 +1,0 @@
-@base <https://semantic-flow.github.io/mesh-alice-bio/> .
-@prefix sflo: <https://semantic-flow.github.io/semantic-flow-ontology/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<_mesh> a sflo:SemanticMesh ;
-  sflo:meshBase "https://semantic-flow.github.io/mesh-alice-bio/"^^xsd:anyURI ;
-  sflo:hasWorkingMeshInventoryFile <_mesh/_inventory/inventory.ttl> .
