@@ -1,0 +1,20 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/alice/_knop/_page> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<> a sflo:ResourcePageDefinition, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasPageRegion <#main-region>, <#sidebar-region> .
+
+<#main-region> a sflo:ResourcePageRegion ;
+  sflo:regionKey "main" ;
+  sflo:hasResourcePageSource <#main-source> .
+
+<#main-source> a sflo:ResourcePageSource ;
+  sflo:hasTargetArtifact <https://semantic-flow.github.io/mesh-alice-bio/alice/page-main> ;
+  sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> .
+
+<#sidebar-region> a sflo:ResourcePageRegion ;
+  sflo:regionKey "sidebar" ;
+  sflo:hasResourcePageSource <#sidebar-source> .
+
+<#sidebar-source> a sflo:ResourcePageSource ;
+  sflo:targetLocalRelativePath "mesh-content/sidebar.md" .
