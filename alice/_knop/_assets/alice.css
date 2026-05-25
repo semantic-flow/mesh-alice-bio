@@ -1,0 +1,32 @@
+body.alice-custom-page {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  margin: 0;
+  color: #1f1a17;
+  background: #f6f1ea;
+}
+
+main.alice-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2.3fr) minmax(16rem, 1fr);
+  gap: 2rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+article.alice-main,
+aside.alice-sidebar {
+  background: rgba(255, 252, 246, 0.92);
+  border: 1px solid #d7c9b4;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+}
+
+aside.alice-sidebar h2 {
+  margin-top: 0;
+}
+
+aside.alice-sidebar ul {
+  padding-left: 1.2rem;
+}
