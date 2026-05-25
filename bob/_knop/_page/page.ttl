@@ -1,0 +1,12 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/bob/_knop/_page> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<> a sflo:ResourcePageDefinition, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasPageRegion <#main-region> .
+
+<#main-region> a sflo:ResourcePageRegion ;
+  sflo:regionKey "main" ;
+  sflo:hasResourcePageSource <#main-source> .
+
+<#main-source> a sflo:ResourcePageSource ;
+  sflo:targetLocalRelativePath "bob-page-main.md" .
