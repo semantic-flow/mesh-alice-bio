@@ -1,0 +1,6 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<bob/_knop> a sflo:Knop ;
+  sflo:designatorPath "bob" ;
+  sflo:hasWorkingKnopInventoryFile <bob/_knop/_inventory/inventory.ttl> .

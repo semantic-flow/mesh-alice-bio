@@ -1,0 +1,17 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<bob/_knop/_sources> a sflo:KnopSourceRegistry, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <bob/_knop/_sources/sources.ttl> ;
+  sflo:hasSourceBinding <bob/_knop/_sources#extraction-source> .
+
+<bob/_knop/_sources#extraction-source> a sflo:ExtractionSource ;
+  sflo:hasTargetArtifact <alice/data> ;
+  sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> ;
+  sflo:hasResolutionObservation <bob/_knop/_sources#extraction-source-observation-001> .
+
+<bob/_knop/_sources#extraction-source-observation-001> a sflo:ArtifactResolutionObservation ;
+  sflo:hasObservedTargetLocatedFile <alice-data.ttl> ;
+  sflo:observedContentDigest "sha256:a1109e20325a24dc1ffba8533fa9581db00895e3deb0718a97e49b78105a320a" .
+
+<bob/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
