@@ -179,3 +179,27 @@
   sflo:hasResourcePage <bob/_knop/index.html> .
 
 <bob/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<_mesh> sflo:hasKnop <alice/bio/_knop> .
+
+<alice/bio> a sflo:PayloadArtifact, sflo:DigitalArtifact ;
+  sflo:hasWorkingLocatedFile <alice-bio.md> .
+
+<alice/bio/_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <alice/bio/_knop/_inventory/inventory.ttl> .
+
+<alice/bio/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<alice-bio.md> a sflo:LocatedFile .
+
+<_mesh> sflo:hasKnop <mesh-content/sidebar/_knop> .
+
+<mesh-content/sidebar> a sflo:PayloadArtifact, sflo:DigitalArtifact ;
+  sflo:hasWorkingLocatedFile <mesh-content/sidebar.md> .
+
+<mesh-content/sidebar/_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <mesh-content/sidebar/_knop/_inventory/inventory.ttl> .
+
+<mesh-content/sidebar/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<mesh-content/sidebar.md> a sflo:LocatedFile .
