@@ -19,5 +19,5 @@
   sflo:hasResourcePageSource <#sidebar-source> .
 
 <#sidebar-source> a sflo:ResourcePageSource ;
-  sflo:hasTargetArtifact <https://semantic-flow.github.io/mesh-alice-bio/mesh-content/sidebar> ;
+  sflo:targetArtifact <https://semantic-flow.github.io/mesh-alice-bio/mesh-content/sidebar> ;
   sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> .

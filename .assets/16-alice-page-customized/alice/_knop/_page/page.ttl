@@ -12,7 +12,7 @@
   sflo:hasResourcePageSource <#main-source> .
 
 <#main-source> a sflo:ResourcePageSource ;
-  sflo:hasTargetArtifact <https://semantic-flow.github.io/mesh-alice-bio/alice/bio> ;
+  sflo:targetArtifact <https://semantic-flow.github.io/mesh-alice-bio/alice/bio> ;
   sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> .
 
 <#sidebar-region> a sflo:ResourcePageRegion ;
@@ -20,5 +20,5 @@
   sflo:hasResourcePageSource <#sidebar-source> .
 
 <#sidebar-source> a sflo:ResourcePageSource ;
-  sflo:hasTargetArtifact <https://semantic-flow.github.io/mesh-alice-bio/mesh-content/sidebar> ;
+  sflo:targetArtifact <https://semantic-flow.github.io/mesh-alice-bio/mesh-content/sidebar> ;
   sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> .
