@@ -145,11 +145,9 @@
           <tr><th scope="row"><a class="wf-term wf-term-link" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></th><td><a href="https://semantic-flow.github.io/sflo/ontology/DigitalArtifact">sflo:DigitalArtifact</a></td></tr>
           <tr><th scope="row"><a class="wf-term wf-term-link" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></th><td><a href="https://semantic-flow.github.io/sflo/ontology/MeshInventory">sflo:MeshInventory</a></td></tr>
           <tr><th scope="row"><a class="wf-term wf-term-link" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></th><td><a href="https://semantic-flow.github.io/sflo/ontology/RdfDocument">sflo:RdfDocument</a></td></tr>
-          <tr><th scope="row"><a class="wf-term wf-term-link" href="https://semantic-flow.github.io/sflo/ontology/currentArtifactHistory" title="https://semantic-flow.github.io/sflo/ontology/currentArtifactHistory">sflo:currentArtifactHistory</a></th><td><a href="https://semantic-flow.github.io/mesh-alice-bio/_mesh/_inventory/_history001">https://semantic-flow.github.io/mesh-alice-bio/_mesh/_inventory/_history001</a></td></tr>
           <tr><th scope="row"><a class="wf-term wf-term-link" href="https://semantic-flow.github.io/sflo/ontology/hasArtifactHistory" title="https://semantic-flow.github.io/sflo/ontology/hasArtifactHistory">sflo:hasArtifactHistory</a></th><td><a href="https://semantic-flow.github.io/mesh-alice-bio/_mesh/_inventory/_history001">https://semantic-flow.github.io/mesh-alice-bio/_mesh/_inventory/_history001</a></td></tr>
           <tr><th scope="row"><a class="wf-term wf-term-link" href="https://semantic-flow.github.io/sflo/ontology/hasResourcePage" title="https://semantic-flow.github.io/sflo/ontology/hasResourcePage">sflo:hasResourcePage</a></th><td><a href="https://semantic-flow.github.io/mesh-alice-bio/_mesh/_inventory/index.html">https://semantic-flow.github.io/mesh-alice-bio/_mesh/_inventory/index.html</a></td></tr>
           <tr><th scope="row"><a class="wf-term wf-term-link" href="https://semantic-flow.github.io/sflo/ontology/hasWorkingLocatedFile" title="https://semantic-flow.github.io/sflo/ontology/hasWorkingLocatedFile">sflo:hasWorkingLocatedFile</a></th><td><a href="https://semantic-flow.github.io/mesh-alice-bio/_mesh/_inventory/inventory.ttl">https://semantic-flow.github.io/mesh-alice-bio/_mesh/_inventory/inventory.ttl</a></td></tr>
-          <tr><th scope="row"><a class="wf-term wf-term-link" href="https://semantic-flow.github.io/sflo/ontology/nextHistoryOrdinal" title="https://semantic-flow.github.io/sflo/ontology/nextHistoryOrdinal">sflo:nextHistoryOrdinal</a></th><td><span>2</span></td></tr>
           </tbody>
         </table>
       </details>
@@ -157,31 +155,35 @@
 
     <section class="wf-source">
       <details open>
-        <summary>Latest historical manifestation file</summary>
+        <summary>Current MeshInventory file</summary>
         <div class="wf-source-meta">
-          <span>_mesh/_inventory/_history001/_s0001/ttl/inventory.ttl</span>
-          <a href="/mesh-alice-bio/_mesh/_inventory/_history001/_s0001/ttl/inventory.ttl">Raw file</a>
+          <span>_mesh/_inventory/inventory.ttl</span>
+          <a href="/mesh-alice-bio/_mesh/_inventory/inventory.ttl">Raw file</a>
         </div>
 <pre class="shiki github-dark-default" style="background-color:#0d1117;color:#e6edf3" tabindex="0"><code><span class="line"><span style="color:#FF7B72">@base </span><span style="color:#FFA657">&#x3C;https://semantic-flow.github.io/mesh-alice-bio/></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"><span style="color:#FF7B72">@prefix sflo:</span><span style="color:#FFA657"> &#x3C;https://semantic-flow.github.io/sflo/ontology/></span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"><span style="color:#FF7B72">@prefix sfcfg:</span><span style="color:#FFA657"> &#x3C;https://semantic-flow.github.io/sflo/config/></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"><span style="color:#FF7B72">@prefix xsd:</span><span style="color:#FFA657"> &#x3C;http://www.w3.org/2001/XMLSchema#></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FFA657">&#x3C;_mesh></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">SemanticMesh</span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">meshBase</span><span style="color:#A5D6FF"> "https://semantic-flow.github.io/mesh-alice-bio/"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">anyURI</span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasMeshMetadata</span><span style="color:#FFA657"> &#x3C;_mesh/_meta></span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasMeshInventory</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sfcfg:</span><span style="color:#79C0FF">hasConfig</span><span style="color:#FFA657"> &#x3C;_mesh/_config></span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasKnop</span><span style="color:#FFA657"> &#x3C;alice/_knop></span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/index.html></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"><span style="color:#FFA657">&#x3C;alice></span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;alice/index.html></span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;alice/_knop></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">Knop</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasWorkingKnopInventoryFile</span><span style="color:#FFA657"> &#x3C;alice/_knop/_inventory/inventory.ttl></span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;alice/_knop/index.html></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">MeshMetadata</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">DigitalArtifact</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasWorkingLocatedFile</span><span style="color:#FFA657"> &#x3C;_mesh/_meta/meta.ttl></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_meta/index.html></span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasArtifactHistory</span><span style="color:#FFA657"> &#x3C;_mesh/_meta/_history001></span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">currentArtifactHistory</span><span style="color:#FFA657"> &#x3C;_mesh/_meta/_history001></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">nextHistoryOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">nextHistoryOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasWorkingLocatedFile</span><span style="color:#FFA657"> &#x3C;_mesh/_meta/meta.ttl></span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_meta/index.html></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/_history001></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ArtifactHistory</span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">historyOrdinal</span><span style="color:#A5D6FF"> "1"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> ;</span></span>
@@ -200,26 +202,15 @@
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">locatedFileForManifestation</span><span style="color:#FFA657"> &#x3C;_mesh/_meta/_history001/_s0001/ttl/meta.ttl></span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_meta/_history001/_s0001/ttl/index.html></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/_history001/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/_history001/_s0001/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/_history001/_s0001/ttl/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
 <span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">MeshInventory</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">DigitalArtifact</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasWorkingLocatedFile</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/inventory.ttl></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/index.html></span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasArtifactHistory</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">currentArtifactHistory</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">nextHistoryOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasWorkingLocatedFile</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/inventory.ttl></span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/index.html></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ArtifactHistory</span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">historyOrdinal</span><span style="color:#A5D6FF"> "1"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasHistoricalState</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/_s0001></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">latestHistoricalState</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/_s0001></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">nextStateOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasHistoricalState</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/_s0002></span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/index.html></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001/_s0001></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">HistoricalState</span><span style="color:#E6EDF3"> ;</span></span>
@@ -232,6 +223,43 @@
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">locatedFileForManifestation</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/_s0001/ttl/inventory.ttl></span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/_s0001/ttl/index.html></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001/_s0002></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">HistoricalState</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">stateOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">previousHistoricalState</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/_s0001></span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasManifestation</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/_s0002/ttl></span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">locatedFileForState</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/_s0002/ttl/inventory.ttl></span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/_s0002/index.html></span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001/_s0002/ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ArtifactManifestation</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">locatedFileForManifestation</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/_s0002/ttl/inventory.ttl></span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/_s0002/ttl/index.html></span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/meta.ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/inventory.ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/_history001/_s0001/ttl/meta.ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001/_s0001/ttl/inventory.ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001/_s0002/ttl/inventory.ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;alice/_knop/_inventory/inventory.ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;alice/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;alice/_knop/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/_history001/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/_history001/_s0001/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/_history001/_s0001/ttl/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
 <span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
@@ -240,49 +268,9 @@
 <span class="line"></span>
 <span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001/_s0001/ttl/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_config></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sfcfg:</span><span style="color:#79C0FF">MeshConfig</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">DigitalArtifact</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasWorkingLocatedFile</span><span style="color:#FFA657"> &#x3C;_mesh/_config/config.ttl></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_config/index.html></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasArtifactHistory</span><span style="color:#FFA657"> &#x3C;_mesh/_config/_history001></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">currentArtifactHistory</span><span style="color:#FFA657"> &#x3C;_mesh/_config/_history001></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">nextHistoryOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001/_s0002/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_config/_history001></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ArtifactHistory</span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">historyOrdinal</span><span style="color:#A5D6FF"> "1"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasHistoricalState</span><span style="color:#FFA657"> &#x3C;_mesh/_config/_history001/_s0001></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">latestHistoricalState</span><span style="color:#FFA657"> &#x3C;_mesh/_config/_history001/_s0001></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">nextStateOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_config/_history001/index.html></span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_config/_history001/_s0001></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">HistoricalState</span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">stateOrdinal</span><span style="color:#A5D6FF"> "1"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasManifestation</span><span style="color:#FFA657"> &#x3C;_mesh/_config/_history001/_s0001/ttl></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">locatedFileForState</span><span style="color:#FFA657"> &#x3C;_mesh/_config/_history001/_s0001/ttl/config.ttl></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_config/_history001/_s0001/index.html></span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_config/_history001/_s0001/ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ArtifactManifestation</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">locatedFileForManifestation</span><span style="color:#FFA657"> &#x3C;_mesh/_config/_history001/_s0001/ttl/config.ttl></span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasResourcePage</span><span style="color:#FFA657"> &#x3C;_mesh/_config/_history001/_s0001/ttl/index.html></span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_config/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_config/_history001/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_config/_history001/_s0001/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_config/_history001/_s0001/ttl/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/meta.ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/_history001/_s0001/ttl/meta.ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/inventory.ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001/_s0001/ttl/inventory.ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_config/config.ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_config/_history001/_s0001/ttl/config.ttl></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001/_s0002/ttl/index.html></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ResourcePage</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">LocatedFile</span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span></code></pre>
       </details>
     </section>    <section class="wf-section">
@@ -300,6 +288,15 @@
                 </div>
               </details>
             </details>
+            <details class="wf-history-node wf-history-node--state" open>
+              <summary class="wf-history-node-header"><a href="/mesh-alice-bio/_mesh/_inventory/_history001/_s0002">_s0002</a></summary>
+              <details class="wf-history-node wf-history-node--manifestation" open>
+                <summary class="wf-history-node-header"><a href="/mesh-alice-bio/_mesh/_inventory/_history001/_s0002/ttl">ttl</a></summary>
+                <div class="wf-history-node wf-history-node--file">
+                  <div class="wf-history-node-header"><a href="/mesh-alice-bio/_mesh/_inventory/_history001/_s0002/ttl/inventory.ttl" class="wf-history-file-iri">https://semantic-flow.github.io/mesh-alice-bio/_mesh/_inventory/_history001/_s0002/ttl/inventory.ttl</a></div>
+                </div>
+              </details>
+            </details>
           </details>
         </div>
       </details>
@@ -308,7 +305,7 @@
     </article>
   </main>
   <footer class="wf-generated">
-    Generated on <span class="wf-term wf-date-tip" tabindex="0" title="2026-05-26T20:59:39.993Z" data-tooltip="2026-05-26T20:59:39.993Z">May 26, 2026</span> by <a href="https://github.com/semantic-flow/weave/">Weave</a>
+    Generated on <span class="wf-term wf-date-tip" tabindex="0" title="2026-05-26T20:59:40.808Z" data-tooltip="2026-05-26T20:59:40.808Z">May 26, 2026</span> by <a href="https://github.com/semantic-flow/weave/">Weave</a>
   </footer>
 </body>
 </html>
