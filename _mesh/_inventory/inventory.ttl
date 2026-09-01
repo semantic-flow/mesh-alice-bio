@@ -329,3 +329,15 @@
 <mesh-content/favicon/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <favicon.ico> a sflo:LocatedFile .
+
+<_mesh> sflo:hasKnop <bob/bio/_knop> .
+
+<bob/bio> a sflo:PayloadArtifact, sflo:DigitalArtifact ;
+  sflo:hasWorkingLocatedFile <bob/bio/bob-bio.md> .
+
+<bob/bio/_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <bob/bio/_knop/_inventory/inventory.ttl> .
+
+<bob/bio/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<bob/bio/bob-bio.md> a sflo:LocatedFile .
