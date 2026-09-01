@@ -284,3 +284,18 @@
 <mesh-content/sidebar/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <mesh-content/sidebar.md> a sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<_mesh> sflo:hasKnop <mesh-content/favicon/_knop> .
+
+<mesh-content/favicon> a sflo:PayloadArtifact, sflo:DigitalArtifact ;
+  sflo:hasWorkingLocatedFile <favicon.ico> .
+
+<mesh-content/favicon/_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <mesh-content/favicon/_knop/_inventory/inventory.ttl> .
+
+<mesh-content/favicon/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<favicon.ico> a sflo:LocatedFile .
