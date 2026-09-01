@@ -136,24 +136,43 @@
 
         </div>
       </header>
+    <section class="wf-section">
+      <details class="wf-properties" open>
+        <summary>Properties</summary>
+        <table class="wf-metadata">
+          <tbody>
+          <tr><th scope="row"><a class="wf-term wf-term-link" href="http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">dcterms:creator</a></th><td><a href="https://djradon.github.io/ns/dave-richardson">https://djradon.github.io/ns/dave-richardson</a></td></tr>
+          </tbody>
+        </table>
+      </details>
+    </section>
 
     <section class="wf-source">
       <details open>
         <summary>Latest historical manifestation file</summary>
         <div class="wf-source-meta">
-          <span>alice/data/_history001/_s0001/ttl/alice-data.ttl</span>
-          <a href="/mesh-alice-bio/alice/data/_history001/_s0001/ttl/alice-data.ttl">Raw file</a>
+          <span>alice/data/_history001/_s0002/ttl/alice-data.ttl</span>
+          <a href="/mesh-alice-bio/alice/data/_history001/_s0002/ttl/alice-data.ttl">Raw file</a>
         </div>
 <pre class="shiki github-dark-default" style="background-color:#0d1117;color:#e6edf3" tabindex="0"><code><span class="line"><span style="color:#FF7B72">@base </span><span style="color:#FFA657">&#x3C;https://semantic-flow.github.io/mesh-alice-bio/></span><span style="color:#E6EDF3"> .</span></span>
-<span class="line"><span style="color:#FF7B72">@prefix :</span><span style="color:#FFA657"> &#x3C;https://semantic-flow.github.io/mesh-alice-bio/></span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"><span style="color:#FF7B72">@prefix dcterms:</span><span style="color:#FFA657"> &#x3C;http://purl.org/dc/terms/></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"><span style="color:#FF7B72">@prefix foaf:</span><span style="color:#FFA657"> &#x3C;http://xmlns.com/foaf/0.1/></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"><span style="color:#FF7B72">@prefix schema:</span><span style="color:#FFA657"> &#x3C;https://schema.org/></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"><span style="color:#FF7B72">@prefix xsd:</span><span style="color:#FFA657"> &#x3C;http://www.w3.org/2001/XMLSchema#></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FF7B72">:</span><span style="color:#79C0FF">alice</span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> schema:</span><span style="color:#79C0FF">Person</span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  foaf:</span><span style="color:#79C0FF">name</span><span style="color:#A5D6FF"> "Alice"</span><span style="color:#E6EDF3"> ;</span></span>
-<span class="line"><span style="color:#FF7B72">  schema:</span><span style="color:#79C0FF">birthDate</span><span style="color:#A5D6FF"> "1923-08-14"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">date</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"><span style="color:#FFA657">&#x3C;alice></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> schema:</span><span style="color:#79C0FF">Person</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  foaf:</span><span style="color:#79C0FF">name</span><span style="color:#A5D6FF"> "Alice Ghostley"</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  schema:</span><span style="color:#79C0FF">birthDate</span><span style="color:#A5D6FF"> "1923-08-14"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">date</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  foaf:</span><span style="color:#79C0FF">knows</span><span style="color:#FFA657"> &#x3C;bob></span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;bob></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> schema:</span><span style="color:#79C0FF">Person</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  foaf:</span><span style="color:#79C0FF">givenName</span><span style="color:#A5D6FF"> "Robert"</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  foaf:</span><span style="color:#79C0FF">nick</span><span style="color:#A5D6FF"> "Bob"</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;alice/bio></span><span style="color:#FF7B72"> dcterms:</span><span style="color:#79C0FF">creator</span><span style="color:#FFA657"> &#x3C;https://djradon.github.io/ns/dave-richardson></span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;alice/data></span><span style="color:#FF7B72"> dcterms:</span><span style="color:#79C0FF">creator</span><span style="color:#FFA657"> &#x3C;https://djradon.github.io/ns/dave-richardson></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span></code></pre>
       </details>
     </section>    <section class="wf-section">
@@ -171,6 +190,15 @@
                 </div>
               </details>
             </details>
+            <details class="wf-history-node wf-history-node--state" open>
+              <summary class="wf-history-node-header"><a href="/mesh-alice-bio/alice/data/_history001/_s0002">_s0002</a></summary>
+              <details class="wf-history-node wf-history-node--manifestation" open>
+                <summary class="wf-history-node-header"><a href="/mesh-alice-bio/alice/data/_history001/_s0002/ttl">ttl</a></summary>
+                <div class="wf-history-node wf-history-node--file">
+                  <div class="wf-history-node-header"><a href="/mesh-alice-bio/alice/data/_history001/_s0002/ttl/alice-data.ttl" class="wf-history-file-iri">https://semantic-flow.github.io/mesh-alice-bio/alice/data/_history001/_s0002/ttl/alice-data.ttl</a></div>
+                </div>
+              </details>
+            </details>
           </details>
         </div>
       </details>
@@ -179,7 +207,7 @@
     </article>
   </main>
   <footer class="wf-generated">
-    Generated on <span class="wf-term wf-date-tip" tabindex="0" title="2026-09-01T00:41:31.800Z" data-tooltip="2026-09-01T00:41:31.800Z">September 1, 2026</span> by <a href="https://github.com/semantic-flow/weave/">Weave</a>
+    Generated on <span class="wf-term wf-date-tip" tabindex="0" title="2026-09-01T00:41:33.622Z" data-tooltip="2026-09-01T00:41:33.622Z">September 1, 2026</span> by <a href="https://github.com/semantic-flow/weave/">Weave</a>
   </footer>
 </body>
 </html>
