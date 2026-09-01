@@ -81,3 +81,13 @@
 <_knop/_inventory/_history001/_s0001/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <_knop/_inventory/_history001/_s0001/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<_knop> sflo:hasResourcePageDefinition <_knop/_page> ;
+  sflo:hasKnopAssetBundle <_knop/_assets> .
+
+<_knop/_page> a sflo:ResourcePageDefinition, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:workingLocalRelativePath "_knop/_page/page.ttl" .
+
+<_knop/_page/page.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<_knop/_assets> a sflo:KnopAssetBundle .
