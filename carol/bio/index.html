@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mesh-alice-bio bio</title>
+  <link rel="canonical" href="https://semantic-flow.github.io/mesh-alice-bio/carol/bio">
+  <link rel="icon" href="/mesh-alice-bio/favicon.ico">
+  <style>
+    :root { min-height: 100%; color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f7f4; color: #20231f; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: linear-gradient(180deg, #f6f7f4 0%, #ebece7 100%); }
+    a { color: #1f5f85; text-decoration-thickness: 0.08em; text-underline-offset: 0.18em; }
+    main { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 16px 0 42px; flex: 1 0 auto; }
+    .wf-shell { display: grid; gap: 18px; min-width: 0; }
+    .wf-shell > * { min-width: 0; }
+    .wf-masthead { min-width: 0; }
+    .wf-page-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 4px; min-width: 0; }
+    .wf-eyebrow { margin: 0; color: #5e675d; font-size: 0.82rem; line-height: 1.2; letter-spacing: 0; font-weight: 700; }
+    .wf-breadcrumbs { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+    .wf-breadcrumbs a { color: inherit; text-decoration-color: rgba(94, 103, 93, 0.45); }
+    .wf-mesh-favicon { flex: 0 0 auto; width: 32px; height: 32px; object-fit: contain; }
+    .wf-hero { border-top: 5px solid #435247; padding: 26px 0 12px; }
+    h1 { margin: 0; overflow-wrap: anywhere; font-size: clamp(1.7rem, 4vw, 2.7rem); line-height: 1.04; letter-spacing: 0; }
+    .wf-classes { margin: 8px 0 0; color: #687167; font-style: italic; }
+    .wf-classes a { color: inherit; text-decoration: underline; text-decoration-color: rgba(104, 113, 103, 0.34); text-decoration-thickness: 0.06em; text-underline-offset: 0.18em; }
+    .wf-summary { max-width: 820px; margin: 14px 0 0; color: #3f463f; font-size: 1.05rem; line-height: 1.6; }
+    .wf-metadata { width: 100%; margin-top: 24px; border-collapse: collapse; table-layout: fixed; border-top: 1px solid #cdd2ca; border-bottom: 1px solid #cdd2ca; }
+    .wf-metadata th, .wf-metadata td { padding: 10px 12px; border-top: 1px solid #e0e4dd; text-align: left; vertical-align: top; }
+    .wf-metadata tr:first-child th, .wf-metadata tr:first-child td { border-top: 0; }
+    .wf-metadata th { width: 180px; color: #4f594f; font-size: 0.78rem; line-height: 1.35; text-transform: uppercase; letter-spacing: 0; overflow-wrap: anywhere; word-break: break-word; }
+    .wf-metadata td { min-width: 0; overflow-wrap: anywhere; }
+    .wf-hero-metadata col.wf-metadata-key { width: 180px; }
+    .wf-child-identifiers { display: flex; flex-wrap: wrap; gap: 5px; align-items: baseline; min-width: 0; max-width: 100%; }
+    .wf-child-identifier { display: inline-block; padding: 0.08rem 0.36rem; border: 1px solid #cdd8cf; border-radius: 2px; background: #eef3ef; text-decoration: none; white-space: nowrap; }
+    .wf-child-identifier:hover, .wf-child-identifier:focus { background: #e0ebe4; border-color: #b8c8bc; }
+    .wf-child-identifiers-more { display: inline-block; max-width: 100%; min-width: 0; border: 0; border-radius: 0; background: transparent; }
+    .wf-child-identifiers-more[open] { flex: 1 1 100%; width: 100%; }
+    .wf-child-identifiers-more > summary { flex: 0 0 auto; display: inline-block; padding: 0.08rem 0.36rem; border: 1px solid #cdd8cf; border-radius: 2px; background: #eef3ef; color: #1f5f85; cursor: pointer; line-height: inherit; }
+    .wf-child-identifiers-more[open] > summary { margin-bottom: 5px; }
+    .wf-child-identifiers-overflow { display: flex; flex-wrap: wrap; gap: 5px; align-items: baseline; min-width: 0; max-width: 100%; }
+    .wf-child-identifiers-more > summary::-webkit-details-marker { display: none; }
+    .wf-child-identifiers-more > summary::marker { content: ""; }
+    .wf-source-summary { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; min-width: 0; }
+    .wf-source-chain { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.28rem; max-width: 100%; padding: 0.16rem 0.22rem 0.16rem 0.5rem; border: 1px solid #c3d1c7; border-radius: 5px; background: #eef3ef; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.48); }
+    .wf-source-chain a { display: inline-flex; align-items: center; max-width: 100%; min-width: 0; text-decoration: none; white-space: nowrap; border-radius: 3px; }
+    .wf-source-root { font-weight: 750; }
+    .wf-source-version-chain { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.22rem; max-width: 100%; min-width: 0; padding: 0.12rem 0.14rem 0.12rem 0.38rem; border: 1px solid #bfd0c4; border-radius: 4px; background: #dfe9e3; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.36); }
+    .wf-source-version-history { font-weight: 650; }
+    .wf-source-version { padding: 0.06rem 0.34rem; border: 1px solid #bdcec3; background: #f8fbf8; font-weight: 650; }
+    .wf-source-chain a:hover, .wf-source-chain a:focus { background: #d2e0d7; outline: 0; }
+    .wf-source-version:hover, .wf-source-version:focus { background: #edf5ef; }
+    .wf-term { cursor: help; border-bottom: 1px dotted currentColor; }
+    .wf-term-link { color: inherit; border-bottom: 0; text-decoration: underline; text-decoration-color: rgba(79, 89, 79, 0.35); text-decoration-thickness: 0.06em; text-underline-offset: 0.18em; }
+    .wf-term-link:hover, .wf-term-link:focus { text-decoration-color: currentColor; }
+    .wf-date-tip { position: relative; display: inline-block; }
+    .wf-date-tip::after { content: attr(data-tooltip); position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%); opacity: 0; pointer-events: none; background: rgba(27, 32, 27, 0.94); color: #fff; border-radius: 5px; padding: 5px 7px; font-size: 0.78rem; white-space: nowrap; transition: opacity 120ms ease; }
+    .wf-date-tip:hover::after, .wf-date-tip:focus::after { opacity: 1; }
+    .wf-section, .wf-source { margin-top: 24px; min-width: 0; }
+    h2 { margin: 0 0 12px; font-size: 1rem; line-height: 1.25; letter-spacing: 0; color: #2f382f; }
+    ul { margin: 0; padding-left: 1.2rem; }
+    li { margin: 0.45rem 0; line-height: 1.45; }
+    code, pre { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+    code { background: #e9ece6; border-radius: 4px; padding: 0.12rem 0.25rem; }
+    details { border: 1px solid #c9cec7; border-radius: 8px; background: #fff; min-width: 0; }
+    details + details { margin-top: 12px; }
+    summary { cursor: pointer; padding: 12px 14px; font-weight: 750; }
+    .wf-children { padding-bottom: 12px; }
+    .wf-children .wf-metadata { margin-top: 0; border-bottom: 0; }
+    .wf-properties { padding-bottom: 12px; }
+    .wf-properties .wf-metadata { margin-top: 0; border-bottom: 0; }
+    .wf-properties .wf-metadata th, .wf-blank-nodes .wf-metadata th { text-transform: none; }
+    .wf-blank-nodes { padding-bottom: 12px; }
+    .wf-blank-nodes .wf-metadata { margin-top: 0; border-bottom: 0; }
+    .wf-blank-node-code { max-height: 24rem; padding: 12px; border: 1px solid #d7dcd4; border-radius: 6px; font-size: 0.82rem; }
+    .wf-references { padding-bottom: 12px; }
+    .wf-reference-groups { display: grid; gap: 8px; padding: 0 14px 4px; }
+    .wf-reference-group { background: #f8faf7; border-color: #d5dbd3; }
+    .wf-reference-group ul { padding: 0 14px 12px 1.6rem; }
+    .wf-history { padding-bottom: 12px; }
+    .wf-history-tree { display: grid; gap: 10px; padding: 0 14px 4px; }
+    .wf-history-node { border: 1px solid #d5dbd3; border-radius: 8px; padding: 10px; }
+    .wf-history-node + .wf-history-node, .wf-history-node .wf-history-node { margin-top: 8px; }
+    .wf-history-node--history { background: #f8faf7; }
+    .wf-history-node--state { background: #eef3ef; }
+    .wf-history-node--manifestation { background: #e7eee9; }
+    .wf-history-node--file { background: #dfe8e2; }
+    .wf-history-node-header { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }
+    .wf-history-node > summary.wf-history-node-header { display: list-item; padding: 0; }
+    .wf-history-class { color: #687167; font-style: italic; font-size: 0.85rem; }
+    .wf-history-file-iri { font-size: 0.82rem; overflow-wrap: anywhere; }
+    .wf-history-gap { display: flex; align-items: center; justify-content: center; min-height: 28px; color: #687167; font-size: 1.15rem; line-height: 1; }
+    .wf-source-meta { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 14px 12px; color: #596259; font-size: 0.88rem; }
+    .wf-source-omitted { margin: 0; padding: 0 14px 14px; color: #596259; line-height: 1.45; }
+    .wf-source-image-preview { display: block; max-width: min(320px, calc(100% - 28px)); max-height: 220px; margin: 0 14px 14px; padding: 12px; border: 1px solid #d7dcd4; border-radius: 6px; background: #f8faf7; object-fit: contain; }
+    pre { margin: 0; width: 100%; max-width: 100%; max-height: 64vh; overflow: auto; border-top: 1px solid #d7dcd4; background: #0d1117; color: #e6edf3; padding: 16px; font-size: 0.86rem; line-height: 1.55; tab-size: 2; white-space: pre-wrap; overflow-wrap: anywhere; word-break: break-word; }
+    pre code { display: block; min-width: 0; background: transparent; color: inherit; border-radius: 0; padding: 0; white-space: inherit; overflow-wrap: inherit; word-break: inherit; }
+    pre code span { overflow-wrap: inherit; word-break: inherit; }
+    .wf-generated { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 8px 0 32px; text-align: center; color: rgba(49, 57, 49, 0.42); font-size: 0.78rem; flex: 0 0 auto; }
+    .wf-generated a { color: inherit; font-weight: 700; }
+  </style>
+
+  <script>
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink && location.pathname.endsWith("/") && !location.search && !location.hash) {
+      const canonicalUrl = new URL(canonicalLink.href);
+      if (canonicalUrl.origin === location.origin && canonicalUrl.pathname === location.pathname.slice(0, -1)) {
+        history.replaceState(null, "", canonicalUrl.pathname);
+      }
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <article class="wf-shell">
+      <header class="wf-masthead">
+        <div class="wf-page-header">
+          <nav class="wf-eyebrow wf-breadcrumbs" aria-label="Breadcrumb">
+<a href="/mesh-alice-bio">mesh-alice-bio</a> <span aria-hidden="true">/</span> <a href="/mesh-alice-bio/carol">carol</a> <span aria-hidden="true">/</span> <span aria-current="page">bio</span>
+          </nav>
+          <img class="wf-mesh-favicon" src="/mesh-alice-bio/favicon.ico" alt="">
+        </div>
+        <div class="wf-hero">
+        <h1>bio</h1>
+        <table class="wf-metadata wf-hero-metadata">
+          <colgroup>
+            <col class="wf-metadata-key">
+            <col>
+            <col class="wf-metadata-key">
+            <col>
+          </colgroup>
+          <tbody>
+          <tr><th scope="row">Canonical IRI</th><td colspan="3"><span>https://semantic-flow.github.io/mesh-alice-bio/carol/bio</span></td></tr>
+          <tr><th scope="row">Working File</th><td colspan="3"><a href="/mesh-alice-bio/carol-bio.md">carol-bio.md</a></td></tr>
+          </tbody>
+        </table>
+
+        </div>
+      </header>
+
+    <section class="wf-source">
+      <details open>
+        <summary>Latest historical manifestation file</summary>
+        <div class="wf-source-meta">
+          <span>carol/bio/_history001/_s0001/md/carol-bio.md</span>
+          <a href="/mesh-alice-bio/carol/bio/_history001/_s0001/md/carol-bio.md">Raw file</a>
+        </div>
+<pre class="shiki github-dark-default" style="background-color:#0d1117;color:#e6edf3" tabindex="0"><code><span class="line"><span style="color:#79C0FF;font-weight:bold">---</span></span>
+<span class="line"><span style="color:#E6EDF3">id: 4stg34r36lbgjourboucmf9</span></span>
+<span class="line"><span style="color:#E6EDF3">title: Carol Burnett</span></span>
+<span class="line"><span style="color:#E6EDF3">desc: ''</span></span>
+<span class="line"><span style="color:#E6EDF3">updated: 1779600984836</span></span>
+<span class="line"><span style="color:#E6EDF3">created: 1779599667121</span></span>
+<span class="line"><span style="color:#79C0FF;font-weight:bold">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79C0FF;font-weight:bold"># Carol Burnett</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79C0FF;font-weight:bold">## Overview</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">![</span><span style="color:#A5D6FF">Image</span><span style="color:#E6EDF3">](</span><span style="color:#E6EDF3;text-decoration:underline">https://images.openai.com/static-rsc-4/EerzJ8LmxlgRoxG61R49ODLGBC4uMgK13MKm_4McvecRYQGiMwyY1LV-QqU_utfI6o3lX-ZixbxFT6l3Lbmw0nXCDQpXzE6Nr9CV_nKnd-gE21XEyfe77-HF0oug5B3Qkw5m-YdXGvnco9LYwnNM4emxpiU4EkaHLzUl_xVuFdonvn3I4uwlD5-VMJfnNCgl?purpose=fullsize</span><span style="color:#E6EDF3">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">Carol Burnett is one of the most influential figures in American television comedy. Born on April 26, 1933, in San Antonio, Texas, she became famous for her extraordinary range as a comedian, singer, actress, and sketch performer. Her career spans vaudeville-inspired sketch comedy, Broadway, film, and dramatic television work, but she is most closely associated with </span><span style="color:#E6EDF3;font-style:italic">*The Carol Burnett Show*</span><span style="color:#E6EDF3"> (1967–1978), which became one of the defining variety programs in television history.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">Burnett grew up in difficult circumstances. Both of her parents struggled with alcoholism, and she was largely raised by her grandmother in Hollywood, California. Financial hardship shaped much of her early life, but so did old movies, radio, and comedy performance. She attended UCLA initially intending to study journalism, but gradually shifted toward theater and performance.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">Her breakthrough came in the 1950s through nightclub and television appearances, particularly after her comic song “I Made a Fool of Myself Over John Foster Dulles.” By the early 1960s, she had become a frequent television guest and Broadway performer, eventually winning a Tony Award for </span><span style="color:#E6EDF3;font-style:italic">*Once Upon a Mattress*</span><span style="color:#E6EDF3">.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79C0FF;font-weight:bold">## The Carol Burnett Show</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">![</span><span style="color:#A5D6FF">Image</span><span style="color:#E6EDF3">](</span><span style="color:#E6EDF3;text-decoration:underline">https://images.openai.com/static-rsc-4/n0Il69MVj_AMT3xF9BsvM2xyhz8oTfasn7VTpvr2Nflx2BEn3yyWRyI89fia7p2HshTt0C2YmR-XbL246Gi41Gf-NWD2ZraAjl_LiMP2VN7LZSQSqvpbocY9UQy4QS5y28_OmvQxKYg9oD0mYjNl6R1wL1D3GPpHwmvVhOkhmvhsAkqMuHYKTJo9tdH-853K?purpose=fullsize</span><span style="color:#E6EDF3">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3;font-style:italic">*The Carol Burnett Show*</span><span style="color:#E6EDF3"> blended sketch comedy, musical numbers, celebrity guests, and improvisational chaos. Burnett’s comedic style was unusual because it combined:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Broad physical comedy</span></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Sharp timing</span></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Emotional sincerity</span></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Ensemble generosity</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">Unlike many star-driven comedy programs, Burnett consistently elevated her collaborators, especially Tim Conway, Harvey Korman, and Vicki Lawrence.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">Her willingness to break character and laugh during sketches became part of the show’s appeal. The famous “curtain rod dress” parody from </span><span style="color:#E6EDF3;font-style:italic">*Gone with the Wind*</span><span style="color:#E6EDF3"> remains one of the most recognizable moments in television comedy.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79C0FF;font-weight:bold">## Relationship with Bob Newhart</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">![</span><span style="color:#A5D6FF">Bob and Carol</span><span style="color:#E6EDF3">](</span><span style="color:#E6EDF3;text-decoration:underline">https://iv1.lisimg.com/image/26445414/583full-carol-burnett.jpg</span><span style="color:#E6EDF3">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">Bob Newhart and Carol Burnett shared a long professional friendship rooted in mutual respect for timing, understatement, and ensemble comedy.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">Their comedic personas contrasted sharply:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Burnett excelled in expressive, elastic, theatrical performance.</span></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Newhart specialized in restraint, hesitation, deadpan delivery, and conversational absurdity.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">That contrast made their appearances together especially effective. Burnett often generated kinetic energy and emotional escalation, while Newhart acted as a calm, bewildered center of gravity.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">Newhart appeared multiple times on </span><span style="color:#E6EDF3;font-style:italic">*The Carol Burnett Show*</span><span style="color:#E6EDF3">, where his dry style played beautifully against the show’s more chaotic sketches. Burnett admired his precision and discipline as a comedian. Newhart, in turn, frequently spoke about Burnett as one of television’s most generous performers — someone who made everyone around her better.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">A significant similarity between them was their lack of cynicism. Both comedians generally avoided cruel humor. Their comedy relied more on:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Human awkwardness</span></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Social discomfort</span></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Character eccentricity</span></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Emotional vulnerability</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">This helped both remain widely beloved across generations.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">They also occupied a similar historical position in television:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Both emerged in the late 1950s and early 1960s.</span></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Both successfully transitioned from nightclub and variety formats into long-running television institutions.</span></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Both maintained reputations for professionalism and kindness in an industry often marked by ego and volatility.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">Burnett later participated in tributes celebrating Newhart’s career, especially as his status evolved from successful comedian into elder statesman of American television comedy.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79C0FF;font-weight:bold">## Shared Legacy</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">Carol Burnett and Bob Newhart represent a style of American comedy that increasingly feels historical:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Performer-centered rather than writer-centered</span></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Rooted in timing and character rather than irony</span></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Comfortable with warmth and sentiment</span></span>
+<span class="line"><span style="color:#FFA657">*</span><span style="color:#E6EDF3"> Built for broad audiences without becoming entirely bland</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">Their careers also demonstrated that television comedy could remain humane without losing sophistication.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E6EDF3">Burnett has often been described as the “queen of television comedy,” while Newhart became the archetype of the intelligent deadpan everyman. Together, they reflected two complementary poles of classic American humor: exuberance and restraint.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79C0FF;font-weight:bold">## Notes</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">-</span><span style="color:#E6EDF3"> this article was generated by ChatGPT, from a prompt by &#x3C;</span><span style="color:#E6EDF3;text-decoration:underline">https://djradon.github.io/ns/dave-richardson</span><span style="color:#E6EDF3">> : "I'd like a markdown bio of Carol Burnett, with a focus on her relationship with Bob Newhart"</span></span>
+<span class="line"><span style="color:#FFA657">-</span><span style="color:#E6EDF3"> this article has no clearance to use any of these pictures</span></span>
+<span class="line"><span style="color:#FFA657">-</span><span style="color:#E6EDF3"> I'd like to create an IRI just for this sweet pic: https://iv1.lisimg.com/image/26445414/583full-carol-burnett.jpg</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79C0FF;font-weight:bold">## References</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">-</span><span style="color:#E6EDF3"> https://www.wikidata.org/wiki/Special:EntityData/Q255565.ttl?utm_source=chatgpt.com</span></span>
+<span class="line"><span style="color:#FFA657">-</span><span style="color:#E6EDF3"> https://dbpedia.org/data/Carol_Burnett.ttl</span></span></code></pre>
+      </details>
+    </section>    <section class="wf-section">
+      <details class="wf-history">
+        <summary>History</summary>
+        <div class="wf-history-tree">
+          <details class="wf-history-node wf-history-node--history" open>
+            <summary class="wf-history-node-header"><a href="/mesh-alice-bio/carol/bio/_history001">carol/bio/_history001</a></summary>
+            <details class="wf-history-node wf-history-node--state" open>
+              <summary class="wf-history-node-header"><a href="/mesh-alice-bio/carol/bio/_history001/_s0001">_s0001</a></summary>
+              <details class="wf-history-node wf-history-node--manifestation" open>
+                <summary class="wf-history-node-header"><a href="/mesh-alice-bio/carol/bio/_history001/_s0001/md">md</a></summary>
+                <div class="wf-history-node wf-history-node--file">
+                  <div class="wf-history-node-header"><a href="/mesh-alice-bio/carol/bio/_history001/_s0001/md/carol-bio.md" class="wf-history-file-iri">https://semantic-flow.github.io/mesh-alice-bio/carol/bio/_history001/_s0001/md/carol-bio.md</a></div>
+                </div>
+              </details>
+            </details>
+          </details>
+        </div>
+      </details>
+    </section>
+
+    </article>
+  </main>
+  <footer class="wf-generated">
+    Generated on <span class="wf-term wf-date-tip" tabindex="0" title="2026-09-01T01:47:20.006Z" data-tooltip="2026-09-01T01:47:20.006Z">September 1, 2026</span> by <a href="https://github.com/semantic-flow/weave/">Weave</a>
+  </footer>
+</body>
+</html>

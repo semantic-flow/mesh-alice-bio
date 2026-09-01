@@ -7,13 +7,15 @@
 
 <carol/_knop/_sources#extraction-source> a sflo:ExtractionSource ;
   sflo:targetArtifact <carol/data> ;
-  sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> ;
+  sflo:targetHistoricalState <carol/data/_history001/_s0001> ;
   sflo:hasResolutionObservation <carol/_knop/_sources#extraction-source-observation-001> .
 
 <carol/_knop/_sources#extraction-source-observation-001> a sflo:ArtifactResolutionObservation ;
   sflo:observedArtifactResolutionSpec [
     a sflo:ArtifactResolutionSpec ;
-    sflo:targetLocatedFile <carol-data.ttl>
+    sflo:targetHistoricalState <carol/data/_history001/_s0001> ;
+    sflo:targetManifestation <carol/data/_history001/_s0001/ttl> ;
+    sflo:targetLocatedFile <carol/data/_history001/_s0001/ttl/carol-data.ttl>
   ] ;
   sflo:observedContentDigest "sha256:31fad2e9a96116242e9949b9aedafd0f8ab11e8c568537ba084a214fdaf26a2a" .
 

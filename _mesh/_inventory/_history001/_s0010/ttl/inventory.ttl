@@ -16,8 +16,6 @@
   sflo:hasKnop <bob/bio/_knop> ;
   sflo:hasKnop <_knop> ;
   sflo:hasKnop <carol/data/_knop> ;
-  sflo:hasKnop <carol/_knop> ;
-  sflo:hasKnop <carol/bio/_knop> ;
   sflo:hasResourcePage <_mesh/index.html> .
 
 <_mesh/index.html> a sflo:ResourcePage, sflo:LocatedFile .
@@ -78,8 +76,6 @@
   sflo:hasHistoricalState <_mesh/_inventory/_history001/_s0007> ;
   sflo:hasHistoricalState <_mesh/_inventory/_history001/_s0008> ;
   sflo:hasHistoricalState <_mesh/_inventory/_history001/_s0009> ;
-  sflo:hasHistoricalState <_mesh/_inventory/_history001/_s0010> ;
-  sflo:hasHistoricalState <_mesh/_inventory/_history001/_s0011> ;
   sflo:hasResourcePage <_mesh/_inventory/_history001/index.html> .
 
 <_mesh/_inventory/_history001/_s0001> a sflo:HistoricalState ;
@@ -466,12 +462,10 @@
 <_mesh> sflo:hasKnop <carol/bio/_knop> .
 
 <carol/bio> a sflo:PayloadArtifact, sflo:DigitalArtifact ;
-  sflo:hasWorkingLocatedFile <carol-bio.md> ;
-  sflo:hasResourcePage <carol/bio/index.html> .
+  sflo:hasWorkingLocatedFile <carol-bio.md> .
 
 <carol/bio/_knop> a sflo:Knop ;
-  sflo:hasWorkingKnopInventoryFile <carol/bio/_knop/_inventory/inventory.ttl> ;
-  sflo:hasResourcePage <carol/bio/_knop/index.html> .
+  sflo:hasWorkingKnopInventoryFile <carol/bio/_knop/_inventory/inventory.ttl> .
 
 <carol/bio/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
@@ -486,11 +480,7 @@
 
 <carol/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
-<carol/bio/index.html> a sflo:ResourcePage, sflo:LocatedFile .
-
 <carol/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
-
-<carol/bio/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <_mesh/_inventory/_history001> sflo:hasHistoricalState <_mesh/_inventory/_history001/_s0010> .
 
@@ -505,25 +495,8 @@
   sflo:locatedFileForManifestation <_mesh/_inventory/_history001/_s0010/ttl/inventory.ttl> ;
   sflo:hasResourcePage <_mesh/_inventory/_history001/_s0010/ttl/index.html> .
 
-<_mesh/_inventory/_history001/_s0011> a sflo:HistoricalState ;
-  sflo:stateOrdinal "11"^^xsd:nonNegativeInteger ;
-  sflo:previousHistoricalState <_mesh/_inventory/_history001/_s0010> ;
-  sflo:hasManifestation <_mesh/_inventory/_history001/_s0011/ttl> ;
-  sflo:locatedFileForState <_mesh/_inventory/_history001/_s0011/ttl/inventory.ttl> ;
-  sflo:hasResourcePage <_mesh/_inventory/_history001/_s0011/index.html> .
-
-<_mesh/_inventory/_history001/_s0011/ttl> a sflo:ArtifactManifestation, sflo:RdfDocument ;
-  sflo:locatedFileForManifestation <_mesh/_inventory/_history001/_s0011/ttl/inventory.ttl> ;
-  sflo:hasResourcePage <_mesh/_inventory/_history001/_s0011/ttl/index.html> .
-
 <_mesh/_inventory/_history001/_s0010/ttl/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
-
-<_mesh/_inventory/_history001/_s0011/ttl/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <_mesh/_inventory/_history001/_s0010/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <_mesh/_inventory/_history001/_s0010/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
-
-<_mesh/_inventory/_history001/_s0011/index.html> a sflo:ResourcePage, sflo:LocatedFile .
-
-<_mesh/_inventory/_history001/_s0011/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
