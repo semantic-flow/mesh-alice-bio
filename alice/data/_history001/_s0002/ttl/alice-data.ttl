@@ -1,0 +1,19 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<alice> a schema:Person ;
+  foaf:name "Alice Ghostley" ;
+  schema:birthDate "1923-08-14"^^xsd:date ;
+  foaf:knows <bob> .
+
+<bob> a schema:Person ;
+  foaf:givenName "Robert" ;
+  foaf:nick "Bob" .
+
+<alice/bio> dcterms:creator <https://djradon.github.io/ns/dave-richardson> .
+
+<alice/data> dcterms:creator <https://djradon.github.io/ns/dave-richardson> .
