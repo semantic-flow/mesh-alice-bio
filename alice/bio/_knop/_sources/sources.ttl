@@ -1,0 +1,24 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<alice/bio/_knop/_sources> a sflo:KnopSourceRegistry, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <alice/bio/_knop/_sources/sources.ttl> ;
+  sflo:hasSourceBinding <alice/bio/_knop/_sources#payload-source> .
+
+<alice/bio/_knop/_sources#payload-source> a sflo:ImportSource ;
+  sflo:targetArtifact <https://semantic-flow.github.io/mesh-alice-bio/alice/bio> ;
+  sflo:targetAccessUrl "https://raw.githubusercontent.com/djradon/public-notes/db9a48933f0e6b208baeab7190cef75d1194634f/user.alice-ghostley.md" ;
+  sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> ;
+  sflo:expectsContentDigest "sha256:0fcd9fe25c5598686557806cfdacc9c765176f315f780fa96644c3f251b49137" ;
+  sflo:hasResolutionObservation <alice/bio/_knop/_sources#payload-source-observation-001> .
+
+<alice/bio/_knop/_sources#payload-source-observation-001>
+  a sflo:ArtifactResolutionObservation ;
+  sflo:observedArtifactResolutionSpec [
+    a sflo:ArtifactResolutionSpec ;
+    sflo:targetLocalRelativePath "alice-bio.md"
+  ] ;
+  sflo:observedContentDigest "sha256:0fcd9fe25c5598686557806cfdacc9c765176f315f780fa96644c3f251b49137" ;
+  sflo:observedAt "2026-09-01T01:47:11.710Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<alice/bio/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
