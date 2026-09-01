@@ -37,8 +37,9 @@
 <founding-demo/_knop/_founding/_history001> a sflo:ArtifactHistory ;
   sflo:historyOrdinal "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
   sflo:hasHistoricalState <founding-demo/_knop/_founding/_history001/_s0001> ;
-  sflo:latestHistoricalState <founding-demo/_knop/_founding/_history001/_s0001> ;
-  sflo:nextStateOrdinal "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+  sflo:latestHistoricalState <founding-demo/_knop/_founding/_history001/_s0002> ;
+  sflo:nextStateOrdinal "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+  sflo:hasHistoricalState <founding-demo/_knop/_founding/_history001/_s0002> .
 
 <founding-demo/_knop/_founding/_history001/_s0001> a sflo:HistoricalState ;
   sflo:stateOrdinal "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
@@ -51,3 +52,19 @@
 
 <founding-demo/_knop/_founding/_history001/_s0001/ttl/data.ttl> a sflo:LocatedFile, sflo:RdfDocument ;
   sflo:hasContentDigest "sha256:553bf2a95aecf2df236f1fac007a2d096eb543ad6b8157167e779282fd0e6e37" .
+
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<founding-demo/_knop/_founding/_history001/_s0002> a sflo:HistoricalState ;
+  sflo:stateOrdinal "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+  sflo:previousHistoricalState <founding-demo/_knop/_founding/_history001/_s0001> ;
+  sflo:hasManifestation <founding-demo/_knop/_founding/_history001/_s0002/ttl> ;
+  sflo:locatedFileForState <founding-demo/_knop/_founding/_history001/_s0002/ttl/data.ttl> .
+
+<founding-demo/_knop/_founding/_history001/_s0002/ttl> a sflo:ArtifactManifestation, sflo:RdfDocument ;
+  sflo:hasContentDigest "sha256:7be783a3110f64c63e133a4fcf6445cce6321a7083e644202c676587adecb724" ;
+  sflo:locatedFileForManifestation <founding-demo/_knop/_founding/_history001/_s0002/ttl/data.ttl> .
+
+<founding-demo/_knop/_founding/_history001/_s0002/ttl/data.ttl> a sflo:LocatedFile, sflo:RdfDocument ;
+  sflo:hasContentDigest "sha256:7be783a3110f64c63e133a4fcf6445cce6321a7083e644202c676587adecb724" .
