@@ -81,3 +81,13 @@
 <alice/_knop/_inventory/_history001/_s0001/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <alice/_knop/_inventory/_history001/_s0001/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<alice/_knop> sflo:hasReferenceCatalog <alice/_knop/_references> .
+
+<alice/_knop/_references> a sflo:ReferenceCatalog, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <alice/_knop/_references/references.ttl> .
+
+<alice/_knop/_references/references.ttl> a sflo:LocatedFile, sflo:RdfDocument .
