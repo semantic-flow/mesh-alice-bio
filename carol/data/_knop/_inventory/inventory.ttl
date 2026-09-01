@@ -1,0 +1,120 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<carol/data/_knop> a sflo:Knop ;
+  sflo:hasKnopMetadata <carol/data/_knop/_meta> ;
+  sflo:hasKnopInventory <carol/data/_knop/_inventory> ;
+  sflo:hasWorkingKnopInventoryFile <carol/data/_knop/_inventory/inventory.ttl> ;
+  sflo:hasPayloadArtifact <carol/data> ;
+  sflo:hasResourcePage <carol/data/_knop/index.html> .
+
+<carol/data> a sflo:PayloadArtifact, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasArtifactHistory <carol/data/_history001> ;
+  sflo:currentArtifactHistory <carol/data/_history001> ;
+  sflo:nextHistoryOrdinal "2"^^xsd:nonNegativeInteger ;
+  sflo:hasWorkingLocatedFile <carol-data.ttl> ;
+  sflo:hasResourcePage <carol/data/index.html> .
+
+<carol/data/_history001> a sflo:ArtifactHistory ;
+  sflo:historyOrdinal "1"^^xsd:nonNegativeInteger ;
+  sflo:hasHistoricalState <carol/data/_history001/_s0001> ;
+  sflo:latestHistoricalState <carol/data/_history001/_s0001> ;
+  sflo:nextStateOrdinal "2"^^xsd:nonNegativeInteger ;
+  sflo:hasResourcePage <carol/data/_history001/index.html> .
+
+<carol/data/_history001/_s0001> a sflo:HistoricalState ;
+  sflo:stateOrdinal "1"^^xsd:nonNegativeInteger ;
+  sflo:hasManifestation <carol/data/_history001/_s0001/ttl> ;
+  sflo:locatedFileForState <carol/data/_history001/_s0001/ttl/carol-data.ttl> ;
+  sflo:hasResourcePage <carol/data/_history001/_s0001/index.html> .
+
+<carol/data/_history001/_s0001/ttl> a sflo:ArtifactManifestation, sflo:RdfDocument ;
+  sflo:locatedFileForManifestation <carol/data/_history001/_s0001/ttl/carol-data.ttl> ;
+  sflo:hasResourcePage <carol/data/_history001/_s0001/ttl/index.html> .
+
+<carol/data/_knop/_meta> a sflo:KnopMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasArtifactHistory <carol/data/_knop/_meta/_history001> ;
+  sflo:currentArtifactHistory <carol/data/_knop/_meta/_history001> ;
+  sflo:nextHistoryOrdinal "2"^^xsd:nonNegativeInteger ;
+  sflo:hasWorkingLocatedFile <carol/data/_knop/_meta/meta.ttl> ;
+  sflo:hasResourcePage <carol/data/_knop/_meta/index.html> .
+
+<carol/data/_knop/_meta/_history001> a sflo:ArtifactHistory ;
+  sflo:historyOrdinal "1"^^xsd:nonNegativeInteger ;
+  sflo:hasHistoricalState <carol/data/_knop/_meta/_history001/_s0001> ;
+  sflo:latestHistoricalState <carol/data/_knop/_meta/_history001/_s0001> ;
+  sflo:nextStateOrdinal "2"^^xsd:nonNegativeInteger ;
+  sflo:hasResourcePage <carol/data/_knop/_meta/_history001/index.html> .
+
+<carol/data/_knop/_meta/_history001/_s0001> a sflo:HistoricalState ;
+  sflo:stateOrdinal "1"^^xsd:nonNegativeInteger ;
+  sflo:hasManifestation <carol/data/_knop/_meta/_history001/_s0001/ttl> ;
+  sflo:locatedFileForState <carol/data/_knop/_meta/_history001/_s0001/ttl/meta.ttl> ;
+  sflo:hasResourcePage <carol/data/_knop/_meta/_history001/_s0001/index.html> .
+
+<carol/data/_knop/_meta/_history001/_s0001/ttl> a sflo:ArtifactManifestation, sflo:RdfDocument ;
+  sflo:locatedFileForManifestation <carol/data/_knop/_meta/_history001/_s0001/ttl/meta.ttl> ;
+  sflo:hasResourcePage <carol/data/_knop/_meta/_history001/_s0001/ttl/index.html> .
+
+<carol/data/_knop/_inventory> a sflo:KnopInventory, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasArtifactHistory <carol/data/_knop/_inventory/_history001> ;
+  sflo:currentArtifactHistory <carol/data/_knop/_inventory/_history001> ;
+  sflo:nextHistoryOrdinal "2"^^xsd:nonNegativeInteger ;
+  sflo:hasWorkingLocatedFile <carol/data/_knop/_inventory/inventory.ttl> ;
+  sflo:hasResourcePage <carol/data/_knop/_inventory/index.html> .
+
+<carol/data/_knop/_inventory/_history001> a sflo:ArtifactHistory ;
+  sflo:historyOrdinal "1"^^xsd:nonNegativeInteger ;
+  sflo:hasHistoricalState <carol/data/_knop/_inventory/_history001/_s0001> ;
+  sflo:latestHistoricalState <carol/data/_knop/_inventory/_history001/_s0001> ;
+  sflo:nextStateOrdinal "2"^^xsd:nonNegativeInteger ;
+  sflo:hasResourcePage <carol/data/_knop/_inventory/_history001/index.html> .
+
+<carol/data/_knop/_inventory/_history001/_s0001> a sflo:HistoricalState ;
+  sflo:stateOrdinal "1"^^xsd:nonNegativeInteger ;
+  sflo:hasManifestation <carol/data/_knop/_inventory/_history001/_s0001/ttl> ;
+  sflo:locatedFileForState <carol/data/_knop/_inventory/_history001/_s0001/ttl/inventory.ttl> ;
+  sflo:hasResourcePage <carol/data/_knop/_inventory/_history001/_s0001/index.html> .
+
+<carol/data/_knop/_inventory/_history001/_s0001/ttl> a sflo:ArtifactManifestation, sflo:RdfDocument ;
+  sflo:locatedFileForManifestation <carol/data/_knop/_inventory/_history001/_s0001/ttl/inventory.ttl> ;
+  sflo:hasResourcePage <carol/data/_knop/_inventory/_history001/_s0001/ttl/index.html> .
+
+<carol/data/_knop/_meta/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<carol/data/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<carol-data.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<carol/data/_history001/_s0001/ttl/carol-data.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<carol/data/_knop/_meta/_history001/_s0001/ttl/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<carol/data/_knop/_inventory/_history001/_s0001/ttl/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<carol/data/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/data/_history001/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/data/_history001/_s0001/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/data/_history001/_s0001/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/data/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/data/_knop/_meta/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/data/_knop/_meta/_history001/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/data/_knop/_meta/_history001/_s0001/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/data/_knop/_meta/_history001/_s0001/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/data/_knop/_inventory/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/data/_knop/_inventory/_history001/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/data/_knop/_inventory/_history001/_s0001/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/data/_knop/_inventory/_history001/_s0001/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .

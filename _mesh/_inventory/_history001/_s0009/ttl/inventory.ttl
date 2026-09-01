@@ -479,25 +479,3 @@
 <_mesh/_inventory/_history001/_s0009/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <_mesh/_inventory/_history001/_s0009/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
-
-@base <https://semantic-flow.github.io/mesh-alice-bio/> .
-@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
-
-<_mesh> sflo:hasKnop <carol/_knop> .
-
-<carol/_knop> a sflo:Knop ;
-  sflo:hasWorkingKnopInventoryFile <carol/_knop/_inventory/inventory.ttl> .
-
-<carol/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
-
-<_mesh> sflo:hasKnop <carol/bio/_knop> .
-
-<carol/bio> a sflo:PayloadArtifact, sflo:DigitalArtifact ;
-  sflo:hasWorkingLocatedFile <carol-bio.md> .
-
-<carol/bio/_knop> a sflo:Knop ;
-  sflo:hasWorkingKnopInventoryFile <carol/bio/_knop/_inventory/inventory.ttl> .
-
-<carol/bio/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
-
-<carol-bio.md> a sflo:LocatedFile .
