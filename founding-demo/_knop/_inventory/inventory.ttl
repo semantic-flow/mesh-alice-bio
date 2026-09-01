@@ -25,3 +25,29 @@
   sflo:hasWorkingLocatedFile <founding-demo/_knop/_founding/data.ttl> .
 
 <founding-demo/_knop/_founding/data.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<founding-demo/_knop/_founding> sflo:hasArtifactHistory <founding-demo/_knop/_founding/_history001> ;
+  sflo:defaultArtifactHistory <founding-demo/_knop/_founding/_history001> ;
+  sflo:currentArtifactHistory <founding-demo/_knop/_founding/_history001> ;
+  sflo:nextHistoryOrdinal "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<founding-demo/_knop/_founding/_history001> a sflo:ArtifactHistory ;
+  sflo:historyOrdinal "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+  sflo:hasHistoricalState <founding-demo/_knop/_founding/_history001/_s0001> ;
+  sflo:latestHistoricalState <founding-demo/_knop/_founding/_history001/_s0001> ;
+  sflo:nextStateOrdinal "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<founding-demo/_knop/_founding/_history001/_s0001> a sflo:HistoricalState ;
+  sflo:stateOrdinal "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+  sflo:hasManifestation <founding-demo/_knop/_founding/_history001/_s0001/ttl> ;
+  sflo:locatedFileForState <founding-demo/_knop/_founding/_history001/_s0001/ttl/data.ttl> .
+
+<founding-demo/_knop/_founding/_history001/_s0001/ttl> a sflo:ArtifactManifestation, sflo:RdfDocument ;
+  sflo:hasContentDigest "sha256:553bf2a95aecf2df236f1fac007a2d096eb543ad6b8157167e779282fd0e6e37" ;
+  sflo:locatedFileForManifestation <founding-demo/_knop/_founding/_history001/_s0001/ttl/data.ttl> .
+
+<founding-demo/_knop/_founding/_history001/_s0001/ttl/data.ttl> a sflo:LocatedFile, sflo:RdfDocument ;
+  sflo:hasContentDigest "sha256:553bf2a95aecf2df236f1fac007a2d096eb543ad6b8157167e779282fd0e6e37" .
