@@ -1,0 +1,27 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<founding-demo/_knop> a sflo:Knop ;
+  sflo:hasKnopMetadata <founding-demo/_knop/_meta> ;
+  sflo:hasKnopInventory <founding-demo/_knop/_inventory> ;
+  sflo:hasWorkingKnopInventoryFile <founding-demo/_knop/_inventory/inventory.ttl> .
+
+<founding-demo/_knop/_meta> a sflo:KnopMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <founding-demo/_knop/_meta/meta.ttl> .
+
+<founding-demo/_knop/_inventory> a sflo:KnopInventory, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <founding-demo/_knop/_inventory/inventory.ttl> .
+
+<founding-demo/_knop/_meta/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<founding-demo/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<founding-demo/_knop> sflo:hasFoundingReferentData <founding-demo/_knop/_founding> .
+
+<founding-demo/_knop/_founding> a sflo:FoundingReferentData, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <founding-demo/_knop/_founding/data.ttl> .
+
+<founding-demo/_knop/_founding/data.ttl> a sflo:LocatedFile, sflo:RdfDocument .
