@@ -1,0 +1,29 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<carol/bio/_knop> a sflo:Knop ;
+  sflo:hasKnopMetadata <carol/bio/_knop/_meta> ;
+  sflo:hasKnopInventory <carol/bio/_knop/_inventory> ;
+  sflo:hasKnopSourceRegistry <carol/bio/_knop/_sources> ;
+  sflo:hasWorkingKnopInventoryFile <carol/bio/_knop/_inventory/inventory.ttl> ;
+  sflo:hasPayloadArtifact <carol/bio> .
+
+<carol/bio> a sflo:PayloadArtifact, sflo:DigitalArtifact ;
+  sflo:hasWorkingLocatedFile <carol-bio.md> .
+
+<carol/bio/_knop/_meta> a sflo:KnopMetadata, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <carol/bio/_knop/_meta/meta.ttl> .
+
+<carol/bio/_knop/_inventory> a sflo:KnopInventory, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <carol/bio/_knop/_inventory/inventory.ttl> .
+
+<carol/bio/_knop/_sources> a sflo:KnopSourceRegistry, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <carol/bio/_knop/_sources/sources.ttl> .
+
+<carol/bio/_knop/_meta/meta.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<carol/bio/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<carol/bio/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<carol-bio.md> a sflo:LocatedFile .

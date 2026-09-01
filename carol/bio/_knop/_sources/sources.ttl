@@ -1,0 +1,24 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<carol/bio/_knop/_sources> a sflo:KnopSourceRegistry, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <carol/bio/_knop/_sources/sources.ttl> ;
+  sflo:hasSourceBinding <carol/bio/_knop/_sources#payload-source> .
+
+<carol/bio/_knop/_sources#payload-source> a sflo:ImportSource ;
+  sflo:targetArtifact <https://semantic-flow.github.io/mesh-alice-bio/carol/bio> ;
+  sflo:targetAccessUrl "https://raw.githubusercontent.com/djradon/public-notes/f46d85187ed7781917b73dd7779b756e2d2b7494/user.carol-burnett.md" ;
+  sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> ;
+  sflo:expectsContentDigest "sha256:5634ffc14165c55ab43c2af38b9d6395e22c8385f54d4a94a7d22d83c99afee7" ;
+  sflo:hasResolutionObservation <carol/bio/_knop/_sources#payload-source-observation-001> .
+
+<carol/bio/_knop/_sources#payload-source-observation-001>
+  a sflo:ArtifactResolutionObservation ;
+  sflo:observedArtifactResolutionSpec [
+    a sflo:ArtifactResolutionSpec ;
+    sflo:targetLocalRelativePath "carol-bio.md"
+  ] ;
+  sflo:observedContentDigest "sha256:5634ffc14165c55ab43c2af38b9d6395e22c8385f54d4a94a7d22d83c99afee7" ;
+  sflo:observedAt "2026-09-01T03:37:33.898Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<carol/bio/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .

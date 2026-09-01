@@ -1,0 +1,46 @@
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<carol> a foaf:Person ;
+  foaf:name "Carol Burnett" ;
+  foaf:givenName "Carol" ;
+  foaf:familyName "Burnett" ;
+  foaf:knows <alice>, <bob> ;
+  foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Carol_Burnett> ;
+  schema:alternateName "Carol Creighton Burnett" ;
+  schema:additionalName "Creighton" ;
+  schema:birthDate "1933-04-26"^^xsd:date ;
+  schema:birthPlace "San Antonio, Texas, United States" ;
+  schema:nationality "American" ;
+  schema:gender "Female" ;
+  schema:description "American comedian, actor, singer, writer, and television host known for The Carol Burnett Show and for a long stage, film, and television career." ;
+  schema:hasOccupation "Actor", "Comedian", "Singer", "Television host", "Writer" ;
+  schema:alumniOf "University of California, Los Angeles" ;
+  schema:parent "Ina Louise Creighton", "Joseph Thomas Burnett" ;
+  schema:spouse "Don Saroyan", "Joe Hamilton", "Brian Miller" ;
+  schema:children "Carrie Hamilton", "Jody Hamilton", "Erin Hamilton" ;
+  schema:knowsAbout "Broadway musical comedy", "Film parody", "Sketch comedy", "Variety television" ;
+  schema:award "Carol Burnett Award inaugural honoree", "Golden Globe Award", "Grammy Award", "Hollywood Walk of Fame star", "Kennedy Center Honors", "Mark Twain Prize for American Humor", "Peabody Award", "People's Choice Award", "Presidential Medal of Freedom", "Primetime Emmy Award", "Screen Actors Guild Life Achievement Award", "Tony Award" ;
+  schema:mainEntityOfPage <https://en.wikipedia.org/wiki/Carol_Burnett> ;
+  schema:sameAs <https://www.britannica.com/biography/Carol-Burnett>, <https://www.imdb.com/name/nm0000993/>, <https://www.wikidata.org/wiki/Q255565> ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q255565> .
+
+<alice> a foaf:Person ;
+  foaf:name "Alice Ghostley" ;
+  foaf:knows <carol> .
+
+<bob> a foaf:Person ;
+  foaf:name "Bob Newhart" ;
+  foaf:knows <carol> .
+
+<carol/data> a schema:Dataset ;
+  dcterms:created "2026-05-25"^^xsd:date ;
+  dcterms:creator <https://djradon.github.io/ns/dave-richardson> ;
+  dcterms:description "Fixture-authored Carol Burnett biographical dataset used to exercise nested payload import, all-terms extraction, and richer ResourcePage relationship data in the Alice Bio mesh." ;
+  dcterms:source <https://en.wikipedia.org/wiki/Carol_Burnett>, <https://www.britannica.com/biography/Carol-Burnett>, <https://www.wikidata.org/wiki/Q255565> ;
+  schema:about <carol> ;
+  schema:name "Carol Burnett biographical dataset" .
