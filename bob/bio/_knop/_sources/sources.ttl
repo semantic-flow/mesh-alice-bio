@@ -19,6 +19,6 @@
     sflo:targetLocalRelativePath "bob/bio/bob-bio.md"
   ] ;
   sflo:observedContentDigest "sha256:bb2825f0cca2a6075315e93c4ced80abbbb4d072aa8756b8c38d44230a33b5cc" ;
-  sflo:observedAt "2026-09-01T03:37:29.609Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  sflo:observedAt "2026-09-01T05:18:46.604Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <bob/bio/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
