@@ -561,3 +561,13 @@
 <_mesh/_inventory/_history001/_s0011/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <_mesh/_inventory/_history001/_s0011/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<_mesh> sflo:hasKnop <founding-demo/_knop> .
+
+<founding-demo/_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <founding-demo/_knop/_inventory/inventory.ttl> .
+
+<founding-demo/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
