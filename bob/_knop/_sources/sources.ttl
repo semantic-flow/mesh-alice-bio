@@ -7,13 +7,15 @@
 
 <bob/_knop/_sources#extraction-source> a sflo:ExtractionSource ;
   sflo:targetArtifact <alice/data> ;
-  sflo:hasArtifactResolutionMode <https://semantic-flow.github.io/sflo/ontology/artifactResolutionMode_working> ;
+  sflo:targetHistoricalState <alice/data/_history001/_s0002> ;
   sflo:hasResolutionObservation <bob/_knop/_sources#extraction-source-observation-001> .
 
 <bob/_knop/_sources#extraction-source-observation-001> a sflo:ArtifactResolutionObservation ;
   sflo:observedArtifactResolutionSpec [
     a sflo:ArtifactResolutionSpec ;
-    sflo:targetLocatedFile <alice-data.ttl>
+    sflo:targetHistoricalState <alice/data/_history001/_s0002> ;
+    sflo:targetManifestation <alice/data/_history001/_s0002/ttl> ;
+    sflo:targetLocatedFile <alice/data/_history001/_s0002/ttl/alice-data.ttl>
   ] ;
   sflo:observedContentDigest "sha256:6df3896c975b782534c22a389a794512609f92c2eb6bd8550c85efe2564bad68" .
 
