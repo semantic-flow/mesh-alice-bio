@@ -107,3 +107,13 @@
 <_mesh/_config/config.ttl> a sflo:LocatedFile, sflo:RdfDocument .
 
 <_mesh/_config/_history001/_s0001/ttl/config.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<_mesh> sflo:hasKnop <alice/_knop> .
+
+<alice/_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <alice/_knop/_inventory/inventory.ttl> .
+
+<alice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
