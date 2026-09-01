@@ -1,0 +1,5 @@
+@prefix stage: <https://stagecraft.example/vocab/> .
+
+<https://semantic-flow.github.io/mesh-alice-bio/founding-demo>
+  stage:incarnationOf <https://original.example/items/42> ;
+  stage:owner <https://stagecraft.example/waystation/campaigns/example> .

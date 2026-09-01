@@ -122,7 +122,7 @@
         </div>
         <div class="wf-hero">
         <h1>_meta</h1>
-        <p class="wf-classes">a <a href="https://semantic-flow.github.io/sflo/ontology/DigitalArtifact">sflo:DigitalArtifact</a>, <a href="https://semantic-flow.github.io/sflo/ontology/MeshMetadata">sflo:MeshMetadata</a>, <a href="https://semantic-flow.github.io/sflo/ontology/RdfDocument">sflo:RdfDocument</a></p>
+        <p class="wf-classes">a <a href="https://semantic-flow.github.io/sflo/ontology/RdfDocument">sflo:RdfDocument</a></p>
         <p class="wf-summary">Metadata for this Semantic Mesh</p>
         <table class="wf-metadata wf-hero-metadata">
           <colgroup>
@@ -143,9 +143,8 @@
         <summary>Properties</summary>
         <table class="wf-metadata">
           <tbody>
-          <tr><th scope="row"><a class="wf-term wf-term-link" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></th><td><a href="https://semantic-flow.github.io/sflo/ontology/DigitalArtifact">sflo:DigitalArtifact</a></td></tr>
-          <tr><th scope="row"><a class="wf-term wf-term-link" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></th><td><a href="https://semantic-flow.github.io/sflo/ontology/MeshMetadata">sflo:MeshMetadata</a></td></tr>
-          <tr><th scope="row"><a class="wf-term wf-term-link" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></th><td><a href="https://semantic-flow.github.io/sflo/ontology/RdfDocument">sflo:RdfDocument</a></td></tr>
+          <tr><th scope="row"><a class="wf-term wf-term-link" href="https://semantic-flow.github.io/sflo/ontology/currentArtifactHistory" title="https://semantic-flow.github.io/sflo/ontology/currentArtifactHistory">sflo:currentArtifactHistory</a></th><td><a href="https://semantic-flow.github.io/mesh-alice-bio/_mesh/_meta/_history001">https://semantic-flow.github.io/mesh-alice-bio/_mesh/_meta/_history001</a></td></tr>
+          <tr><th scope="row"><a class="wf-term wf-term-link" href="https://semantic-flow.github.io/sflo/ontology/nextHistoryOrdinal" title="https://semantic-flow.github.io/sflo/ontology/nextHistoryOrdinal">sflo:nextHistoryOrdinal</a></th><td><span>2</span></td></tr>
           </tbody>
         </table>
       </details>
@@ -166,14 +165,28 @@
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">meshBase</span><span style="color:#A5D6FF"> "https://semantic-flow.github.io/mesh-alice-bio/"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">anyURI</span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">hasMeshInventory</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory></span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">MeshMetadata</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">DigitalArtifact</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta></span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">currentArtifactHistory</span><span style="color:#FFA657"> &#x3C;_mesh/_meta/_history001></span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">nextHistoryOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">MeshInventory</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">DigitalArtifact</span><span style="color:#E6EDF3">, </span><span style="color:#FF7B72">sflo:</span><span style="color:#79C0FF">RdfDocument</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_meta/_history001></span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">latestHistoricalState</span><span style="color:#FFA657"> &#x3C;_mesh/_meta/_history001/_s0001></span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">nextStateOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory></span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">currentArtifactHistory</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001></span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">nextHistoryOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001></span><span style="color:#FF7B72"> a</span><span style="color:#FF7B72"> sflo:</span><span style="color:#79C0FF">ArtifactHistory</span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_inventory/_history001></span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">latestHistoricalState</span><span style="color:#FFA657"> &#x3C;_mesh/_inventory/_history001/_s0001></span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">nextStateOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_config></span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">currentArtifactHistory</span><span style="color:#FFA657"> &#x3C;_mesh/_config/_history001></span><span style="color:#E6EDF3"> ;</span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">nextHistoryOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFA657">&#x3C;_mesh/_config/_history001></span></span>
+<span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">latestHistoricalState</span><span style="color:#FFA657"> &#x3C;_mesh/_config/_history001/_s0001></span><span style="color:#E6EDF3"> ;</span></span>
 <span class="line"><span style="color:#FF7B72">  sflo:</span><span style="color:#79C0FF">nextStateOrdinal</span><span style="color:#A5D6FF"> "2"</span><span style="color:#E6EDF3">^^</span><span style="color:#FF7B72">xsd:</span><span style="color:#79C0FF">nonNegativeInteger</span><span style="color:#E6EDF3"> .</span></span>
 <span class="line"></span></code></pre>
       </details>
@@ -200,7 +213,7 @@
     </article>
   </main>
   <footer class="wf-generated">
-    Generated on <span class="wf-term wf-date-tip" tabindex="0" title="2026-05-26T21:02:15.065Z" data-tooltip="2026-05-26T21:02:15.065Z">May 26, 2026</span> by <a href="https://github.com/semantic-flow/weave/">Weave</a>
+    Generated on <span class="wf-term wf-date-tip" tabindex="0" title="2026-09-01T00:41:37.779Z" data-tooltip="2026-09-01T00:41:37.779Z">September 1, 2026</span> by <a href="https://github.com/semantic-flow/weave/">Weave</a>
   </footer>
 </body>
 </html>

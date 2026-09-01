@@ -5,7 +5,6 @@
 <carol/bio/_knop> a sflo:Knop ;
   sflo:hasKnopMetadata <carol/bio/_knop/_meta> ;
   sflo:hasKnopInventory <carol/bio/_knop/_inventory> ;
-  sflo:hasKnopSourceRegistry <carol/bio/_knop/_sources> ;
   sflo:hasWorkingKnopInventoryFile <carol/bio/_knop/_inventory/inventory.ttl> ;
   sflo:hasPayloadArtifact <carol/bio> ;
   sflo:hasResourcePage <carol/bio/_knop/index.html> .
@@ -65,11 +64,6 @@
   sflo:hasWorkingLocatedFile <carol/bio/_knop/_inventory/inventory.ttl> ;
   sflo:hasResourcePage <carol/bio/_knop/_inventory/index.html> .
 
-<carol/bio/_knop/_sources> a sflo:KnopSourceRegistry, sflo:DigitalArtifact, sflo:RdfDocument ;
-  sflo:hasWorkingLocatedFile <carol/bio/_knop/_sources/sources.ttl> .
-
-<carol/bio/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
-
 <carol/bio/_knop/_inventory/_history001> a sflo:ArtifactHistory ;
   sflo:historyOrdinal "1"^^xsd:nonNegativeInteger ;
   sflo:hasHistoricalState <carol/bio/_knop/_inventory/_history001/_s0001> ;
@@ -124,3 +118,10 @@
 <carol/bio/_knop/_inventory/_history001/_s0001/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <carol/bio/_knop/_inventory/_history001/_s0001/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
+
+<carol/bio/_knop> sflo:hasKnopSourceRegistry <carol/bio/_knop/_sources> .
+
+<carol/bio/_knop/_sources> a sflo:KnopSourceRegistry, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <carol/bio/_knop/_sources/sources.ttl> .
+
+<carol/bio/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
