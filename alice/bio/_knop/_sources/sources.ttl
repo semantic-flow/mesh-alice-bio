@@ -19,6 +19,6 @@
     sflo:targetLocalRelativePath "alice-bio.md"
   ] ;
   sflo:observedContentDigest "sha256:0fcd9fe25c5598686557806cfdacc9c765176f315f780fa96644c3f251b49137" ;
-  sflo:observedAt "2026-09-01T01:47:11.710Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  sflo:observedAt "2026-09-01T03:37:26.313Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <alice/bio/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .

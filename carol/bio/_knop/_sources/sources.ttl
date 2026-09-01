@@ -19,6 +19,6 @@
     sflo:targetLocalRelativePath "carol-bio.md"
   ] ;
   sflo:observedContentDigest "sha256:5634ffc14165c55ab43c2af38b9d6395e22c8385f54d4a94a7d22d83c99afee7" ;
-  sflo:observedAt "2026-09-01T01:47:19.305Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  sflo:observedAt "2026-09-01T03:37:33.898Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <carol/bio/_knop/_sources/sources.ttl> a sflo:LocatedFile, sflo:RdfDocument .
