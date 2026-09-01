@@ -143,3 +143,18 @@
   sflo:hasResourcePage <alice/_knop/index.html> .
 
 <alice/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+@base <https://semantic-flow.github.io/mesh-alice-bio/> .
+@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
+
+<_mesh> sflo:hasKnop <alice/data/_knop> .
+
+<alice/data> a sflo:PayloadArtifact, sflo:DigitalArtifact, sflo:RdfDocument ;
+  sflo:hasWorkingLocatedFile <alice-data.ttl> .
+
+<alice/data/_knop> a sflo:Knop ;
+  sflo:hasWorkingKnopInventoryFile <alice/data/_knop/_inventory/inventory.ttl> .
+
+<alice/data/_knop/_inventory/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
+
+<alice-data.ttl> a sflo:LocatedFile, sflo:RdfDocument .
