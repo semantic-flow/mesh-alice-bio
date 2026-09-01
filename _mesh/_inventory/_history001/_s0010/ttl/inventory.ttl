@@ -531,33 +531,3 @@
 <_mesh/_inventory/_history001/_s0010/index.html> a sflo:ResourcePage, sflo:LocatedFile .
 
 <_mesh/_inventory/_history001/_s0010/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
-
-@base <https://semantic-flow.github.io/mesh-alice-bio/> .
-@prefix sflo: <https://semantic-flow.github.io/sflo/ontology/> .
-
-<carol/bio> sflo:hasResourcePage <carol/bio/index.html> .
-
-<carol/bio/_knop> sflo:hasResourcePage <carol/bio/_knop/index.html> .
-
-<carol/bio/index.html> a sflo:ResourcePage, sflo:LocatedFile .
-
-<carol/bio/_knop/index.html> a sflo:ResourcePage, sflo:LocatedFile .
-
-<_mesh/_inventory/_history001> sflo:hasHistoricalState <_mesh/_inventory/_history001/_s0011> .
-
-<_mesh/_inventory/_history001/_s0011> a sflo:HistoricalState ;
-  sflo:stateOrdinal "11"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
-  sflo:previousHistoricalState <_mesh/_inventory/_history001/_s0010> ;
-  sflo:hasManifestation <_mesh/_inventory/_history001/_s0011/ttl> ;
-  sflo:locatedFileForState <_mesh/_inventory/_history001/_s0011/ttl/inventory.ttl> ;
-  sflo:hasResourcePage <_mesh/_inventory/_history001/_s0011/index.html> .
-
-<_mesh/_inventory/_history001/_s0011/ttl> a sflo:ArtifactManifestation, sflo:RdfDocument ;
-  sflo:locatedFileForManifestation <_mesh/_inventory/_history001/_s0011/ttl/inventory.ttl> ;
-  sflo:hasResourcePage <_mesh/_inventory/_history001/_s0011/ttl/index.html> .
-
-<_mesh/_inventory/_history001/_s0011/ttl/inventory.ttl> a sflo:LocatedFile, sflo:RdfDocument .
-
-<_mesh/_inventory/_history001/_s0011/index.html> a sflo:ResourcePage, sflo:LocatedFile .
-
-<_mesh/_inventory/_history001/_s0011/ttl/index.html> a sflo:ResourcePage, sflo:LocatedFile .
