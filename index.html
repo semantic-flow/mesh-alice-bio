@@ -99,6 +99,7 @@
     .wf-generated { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 8px 0 32px; text-align: center; color: rgba(49, 57, 49, 0.42); font-size: 0.78rem; flex: 0 0 auto; }
     .wf-generated a { color: inherit; font-weight: 700; }
   </style>
+  <link rel="stylesheet" href="./_knop/_assets/site.css">
 
   <script>
     const canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -131,6 +132,7 @@
           </colgroup>
           <tbody>
           <tr><th scope="row">Canonical IRI</th><td colspan="3"><span>https://semantic-flow.github.io/mesh-alice-bio</span></td></tr>
+          <tr><th scope="row">Page definition</th><td colspan="3"><a href="./_knop/_page">./_knop/_page</a></td></tr>
           </tbody>
         </table>
 
@@ -146,11 +148,54 @@
         </table>
       </details>
     </section>
+    <section class="wf-section" id="region-main">
+      <h1>Tour of the repo</h1>
+      <p>Welcome to <code>mesh-alice-bio</code>.</p>
+      <p>This repository is a compact demonstration mesh about Alice Ghostley, Bob Newhart, and Carol Burnett. It is intentionally small enough to inspect by hand while still showing how a few people, datasets, biographies, and pages can fit together.</p>
+      <h2>Highlights</h2>
+      <ul>
+        <li><code>alice/</code> is the clearest customized person page.</li>
+        <li><code>bob/</code> is a generated identifier page with a separate imported biography at <code>bob/bio/</code>.</li>
+        <li><code>carol/</code> adds a richer dataset and connects Carol Burnett to both Alice and Bob.</li>
+        <li><code>alice/data/</code> and <code>carol/data/</code> are the source datasets behind the people pages.</li>
+      </ul>
+      <h2>What this mesh demonstrates</h2>
+      <ul>
+        <li>local Turtle datasets for people and relationships</li>
+        <li>imported Markdown biographies kept as governed content</li>
+        <li>customized pages that combine authored prose with generated resource panels</li>
+        <li>history pages that show how the mesh has changed over time</li>
+      </ul>
+      <h2>Suggested stops</h2>
+      <ul>
+        <li>Start at <a href="/mesh-alice-bio/alice/">Alice</a> for the clearest customized identifier page.</li>
+        <li>Visit <a href="/mesh-alice-bio/bob/">Bob</a> for the generated identifier page, then <a href="/mesh-alice-bio/bob/bio/">Bob bio</a> for the imported-content example.</li>
+        <li>Visit <a href="/mesh-alice-bio/carol/">Carol</a> for the richer biographical dataset.</li>
+        <li>Visit <a href="/mesh-alice-bio/_knop/">Root Knop</a> to inspect the root-owned support surface.</li>
+        <li>Inspect <a href="/mesh-alice-bio/_mesh/_inventory/_history001/">mesh inventory history</a> to see how the repository changed over the ladder.</li>
+      </ul>
+      <h2>Reading the layout</h2>
+      <ul>
+        <li>Public identifier pages live at paths like <code>alice/index.html</code>, <code>bob/index.html</code>, and <code>index.html</code>.</li>
+        <li>Support artifacts live under <code>_knop/</code> and <code>_mesh/</code>.</li>
+        <li>Current authored content can live in natural workspace paths such as <code>home.md</code>, <code>bob/bio/bob-bio.md</code>, and <code>mesh-content/sidebar.md</code>.</li>
+        <li>Woven historical states live under <code>_history001/_s0001/</code>-style paths.</li>
+      </ul>
+      <p>This root page is meant to help a new reader orient quickly before diving into individual identifiers and support artifacts.</p>
+    </section>
+    <section class="wf-section" id="region-sidebar">
+      <h2>Quick links</h2>
+      <ul>
+        <li><a href="/mesh-alice-bio/_knop">Alice Knop</a></li>
+        <li><a href="/mesh-alice-bio/bio">Alice bio</a></li>
+        <li><a href="/bob">Bob</a></li>
+      </ul>
+    </section>
 
     </article>
   </main>
   <footer class="wf-generated">
-    Generated on <span class="wf-term wf-date-tip" tabindex="0" title="2026-09-01T03:37:31.356Z" data-tooltip="2026-09-01T03:37:31.356Z">September 1, 2026</span> by <a href="https://github.com/semantic-flow/weave/">Weave</a>
+    Generated on <span class="wf-term wf-date-tip" tabindex="0" title="2026-09-01T03:37:32.539Z" data-tooltip="2026-09-01T03:37:32.539Z">September 1, 2026</span> by <a href="https://github.com/semantic-flow/weave/">Weave</a>
   </footer>
 </body>
 </html>
